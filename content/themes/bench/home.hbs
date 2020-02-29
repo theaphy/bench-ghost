@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bench Consulting</title>
+    {{> "site-wide-meta"}}
+    {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+    <div id="staff-bio-popup">
+        <div class="staff-bio-popup_inner">
+            <span id="close-staff">close</span>
+            <div id="staff-inner_content"></div>
+        </div>
+    </div>
+    {{> "site-nav"}}
+    <section class="bench-home-header">
+        <div class="home-header_copy">
+            <h1>Bench Consulting is a team of placemakers focused on helping hyper-local projects come to life to
+                support vibrant, thriving communities.</h1>
+            <h4>We engage communities in all many phases of projects with a variety of goals and scopes, feel free to
+                start a conversation to see if our skills are a fit for your needs!</h4>
+        </div>
+        <div class="home-header_art">
+            <img src="{{asset "images/Full Bench Logo Feb 2020-crop.png"}}" alt="" class="home-header_art-img">
+            <div class="line"></div>
+        </div>
+    </section>
+    <section class="bench-home-services constrained">
+        <h2 class="home-services_title">our services</h2>
+        <p class="home-services_sub-title">Allow everyone to make the most of the missed opportunities in the vacant
+            spaces and underutilized
+            places to create a vibrant, thriving, connected community increasing local qualities of life.</p>
+        <div class="home-services_buckets">
+            <div class="service-bucket">
+                <h4 class="service-bucket_title">placemaking plan</h4>
+                <p>Is your main street, neighborhood, business district or development project looking to add more
+                    vibrancy but don’t know where to start? Our team can help locate your areas of opportunity and
+                    engage your community to get you started on the right path to make your space a place.</p>
+            </div>
+            <div class="service-bucket">
+                <h4 class="service-bucket_title">single intervention</h4>
+                <p>Whether we’ve designated a space for improvement through our Placemaking Plan or you’ve already found
+                    the space you’d like to activate, our team of experts will work with your community to activate the
+                    space that serves the needs and ultimate goals of your organization, community and city.</p>
+            </div>
+            <div class="service-bucket">
+                <h4 id="last-bucket_title" class="service-bucket_title">long term engagement</h4>
+                <p>There’s ample opportunity in your main street, downtown or development project. Let our team work
+                    with you and your community to identify those opportunities and develop short and long term
+                    placemaking plans and interventions to support a more vibrant sense of place.</p>
+            </div>
+        </div>
+    </section>
+    <section class="bench-home-team constrained">
+        <div class="home-team_inner">
+            <div class="home-team_copy">
+                <h2>who we are</h2>
+                <p>We’re a team with a passion for bringing communities together in collective efforts to build vibrant
+                    cities and towns across the world. We have backgrounds in design, law, nonprofits, grassroots
+                    organizing and have all traveled the world, learning what transforms our shared “spaces” into
+                    “places.”</p>
+            </div>
+            <div data-staffId="1" id="jonathan-headshot" class="home-team_member"></div>
+            <div class="home-team_project"></div>
+            <div data-staffId="2" id="bridget-headshot" class="home-team_member"></div>
+            <div data-staffId="3" id="mahala-headshot" class="home-team_member"></div>
+            <div data-staffId="4" id="ebrahim-headshot" class="home-team_member"></div>
+            <div class="home-team_project"></div>
+        </div>
+    </section>
+    <section class="bench-home-our-work constrained">
+        <h2 class="our-work_title">our work</h2>
+        <div class="our-work_slider">
+            <div class="slider-copy">
+                <p class="testimonial-copy">
+                    <img src="{{asset "images/beth-reynolds.jpeg"}}" alt="" class="testimonial-img">
+                    <span class="testimonial-attr">Beth Reynolds <span class="testimonial-attr_feat">The Corner
+                            Spot</span> Town of Ashland, MA</span>
+                    “I have to say that the buzz around town has been amazing, this project has done so much for our
+                    little town in just a few weeks, people are excited for change, they are more optimistic that the
+                    leadership is getting things done. It has done so much more than transform an ugly lot into a cool
+                    park. Keep doing what you are doing, this is the good stuff and you are so great at it!”</p>
+            </div>
+            <img src="{{asset "images/ashland.JPG"}}" alt="" class="slider-image">
+        </div>
+    </section>
+    <section class="tree-divider">
+        <img src="{{ asset "images/tree.png"}}" alt="">
+    </section>
+    <section class="bench-home-contact constrained">
+        <div id="wufoo-z1zdlw000tpd32"></div>
+        <script
+            type="text/javascript"> var z1zdlw000tpd32; (function (d, t) { var s = d.createElement(t), options = { 'userName': 'benchconsulting', 'formHash': 'z1zdlw000tpd32', 'autoResize': true, 'height': '557', 'async': true, 'host': 'wufoo.com', 'header': 'show', 'ssl': true }; s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'secure.wufoo.com/scripts/embed/form.js'; s.onload = s.onreadystatechange = function () { var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; try { z1zdlw000tpd32 = new WufooForm(); z1zdlw000tpd32.initialize(options); z1zdlw000tpd32.display(); } catch (e) { } }; var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); })(document, 'script'); </script>
+    </section>
+    {{> "footer"}}
+    {{ghost_foot}}
+    <script src="{{asset "js/staff-bio-popup.js"}}"></script>
+</body>
+</html>

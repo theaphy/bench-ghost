@@ -1,0 +1,13 @@
+.post-feed {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+article {
+    margin-bottom: 100px;
+}
+
+.post-feed section.post-card-excerpt {
+    margin: 0;
+    max-width: 100%;
+}

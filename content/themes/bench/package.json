@@ -1,0 +1,8 @@
+{
+    "name": "bench-consult",
+     "version": "1.0.0",
+     "author": {
+         "email": "tim@patronicity.com"
+     },
+     "keywords": ["ghost-theme"]
+}

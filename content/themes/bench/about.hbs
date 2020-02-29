@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Bench</title>
+    {{> "site-wide-meta"}}
+</head>
+<body>
+    {{> "site-nav"}}
+    <h1>about us</h1>
+    {{#get "authors"}}
+        {{#foreach authors}}
+            <p>{{name}}</p>
+            <img src="{{profile_image}}" alt="">
+        {{/foreach}}
+    {{/get}}
+    {{> "footer"}}    
+</body>
+</html>
