@@ -4,6 +4,8 @@ const staffPopup = document.getElementById("staff-bio-popup");
 const closeStaffPopup = document.getElementById("close-staff");
 const content = document.getElementById("staff-inner_content");
 
+const docBody = document.getElementsByTagName("body");
+
 
 const bios = [
     {
@@ -45,6 +47,7 @@ const bios = [
 ]
 
 closeStaffPopup.addEventListener("click", () => {
+    docBody[0].style.overflow = "auto";
     staffPopup.style.display = "none";
     content.innerHTML = "";
 });
@@ -60,18 +63,17 @@ for (let item of aboutNodes) {
 function showStaffBio(e) {
     let name, title, bio;
     const staffId = parseInt(e.target.dataset.staffid);
-    console.log(staffId);
     let staffMember = bios.find(element => staffId === element.id);
 
     name = staffMember.name;
     title = staffMember.title;
     bio = staffMember.bio.map(graf => "<p>" + graf + "</p>");
-    console.log(bio);
 
     nameHtml = "<h3>" + name + "</h3>";
     titleHtml = "<h4>" + title + "</h4>";
     bioHtml = bio.join("");
     content.innerHTML = content.innerHTML + nameHtml + titleHtml + bioHtml;
 
+    docBody[0].style.overflow = "hidden";
     staffPopup.style.display = "block";
 }
