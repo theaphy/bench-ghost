@@ -1,13 +1,30 @@
+:root {
+    --primary: #5CC1AE;
+    --secondary: #EA5A68;
+}
+
 .post-feed {
     max-width: 80%;
     margin: 0 auto;
 }
 
 article {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--primary);
+}
+
+article:last-child {
+    border: none;
 }
 
 .post-feed section.post-card-excerpt {
     margin: 0;
     max-width: 100%;
+    color: #333;
+}
+
+.post-card-image-link {
+    padding-bottom: 10px;
+    display: block;
 }
