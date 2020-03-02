@@ -21,6 +21,7 @@ h6 {
 }
 
 p {
+    font-size: larger;
     font-weight: 200;
 }
 
@@ -210,6 +211,164 @@ img.home-header_art-img {
 .service-bucket p {
     font-size: .85rem;
     line-height: 1.1rem;
+}
+
+.about-header {
+    background-color: var(--primary);
+    color: #fff;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    padding: 15px 0;
+    justify-content: center;
+}
+
+.about-header_name {
+    flex-basis: 25%;
+    text-align: right;
+}
+
+.about-header_desc {
+    flex-basis: 55%;
+    text-align: left;
+    padding-left: 25px;
+}
+
+.bench-home-services.about .home-services_title {
+    text-align: left;
+}
+
+.bench-home-services.about .home-services_sub-title {
+    margin-bottom: 25px;
+}
+
+.bench-home-services.about .home-services_buckets {
+    border: 2px solid var(--primary);
+}
+
+
+.bench-home-services.about .home-services_buckets .service-bucket {
+    border: none;
+    box-shadow: none;
+    text-align: center;
+    flex-basis: 100px;
+    margin-bottom: 10px;
+}
+
+
+.bench-home-services.about .home-services_buckets .service-bucket h4 {
+    max-width: 100%;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.bench-home-services.about .home-services_buckets .service-bucket h4::after {
+    content: ""!important;
+}
+
+.bench-home-services.about .home-services_buckets p {
+    font-size: 1em;
+}
+
+.home-services_buckets.about-service_buckets {
+    text-align: center;
+}
+
+.about-service_buckets h4 {
+    width: 100%;
+}
+
+.about_sub-title {
+    margin-bottom: 25px;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-team .team-members .team-member {
+    padding: 0 50px 50px 50px;
+    text-align: center;
+    max-width: 200px;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.team-member .title {
+    margin-bottom: 5px;
+    color: #999;
+}
+
+.team-member .sub-title {
+    margin-bottom: 5px;
+    color: var(--primary);
+}
+
+.team-member .copy {
+    margin-top: 5px;;
+    text-align: left;
+    cursor: pointer;
+}
+
+.team-member .copy::after {
+    content: "\21E2";
+}
+
+.team-member .social {
+    max-width: 55px;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+}
+
+.team-member .social a {
+    width: 20px;
+    margin-right: 7px;
+}
+
+.team-member .social a .linkedin-img {
+    width: 17px;
+}
+
+.about-team .team-members .team-member .image {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    margin-bottom: 5px;;
+}
+
+.about-team .team-member .image {
+   background-size: cover;
+   margin: 0 auto;
+   margin-bottom: 10px;
+}
+
+.about-team .team-member .image.jonathan  {
+    background-image: url('../images/headshots/jonathan.jpg');
+}
+
+.about-team .team-member .image.bridget {
+    background-image: url('../images/headshots/bridget.jpg');
+}
+
+.about-team .team-member .image.mahala  {
+    background-image: url('../images/headshots/mahala.jpg');
+}
+
+.about-team .team-member .image.ebrahim  {
+    background-image: url('../images/headshots/ebrahim.jpg');    
+}
+
+.about-team .team-member .image.tim  {
+    background-image: url('../images/headshots/tim.jpg');    
+}
+
+.about-team .team-member .image.barb  {
+    background-image: url('../images/headshots/barb.jpg');    
 }
 
 .home-team_inner {
@@ -425,6 +584,12 @@ img.home-header_art-img {
         max-width: 27%;
     }
 
+    .about-header {
+        background-color: var(--primary);
+        max-width: 100%;
+        width: 100%;
+    }
+
     .bench-home-team {
         max-width: 60%;
         margin-right: auto;
@@ -536,9 +701,9 @@ img.home-header_art-img {
         padding: 5px 25px;
     }
     
-    .home-header_copy {
+    /* .home-header_copy {
         max-width: 55%;
-    }
+    } */
 
     .home-team_inner {
         display: grid;

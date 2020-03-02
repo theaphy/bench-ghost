@@ -1,4 +1,5 @@
 const teamNodes = document.getElementsByClassName("home-team_member");
+const aboutNodes = document.getElementsByClassName("copy");
 const staffPopup = document.getElementById("staff-bio-popup");
 const closeStaffPopup = document.getElementById("close-staff");
 const content = document.getElementById("staff-inner_content");
@@ -28,6 +29,18 @@ const bios = [
         "title": "Principal & Community Strategist",
         "name": "Ebrahim Varachia",
         "bio": ["Ebrahim is the President & Co-Founder of Patronicity, a civic & community crowdfunding platform built to inspire growth and change in placemaking throughout cities and towns, both urban and rural, across the country. Growing Patronicity to be more than just a civic crowdfunding platform, he has led Patronicity to change the way grants are administered and how communities come together to envision, build and create more sustainable and impactful projects meaningful to them. Leveraging insights from seeing over 600 projects come to life through Patronicity, Ebrahim launched Bench Consulting to use technology and human centered design to garner deeper community engagement to develop locally inspired placemaking projects."]
+    },
+    {
+        "id": 5,
+        "title": "Web Developer",
+        "name": "Tim Heaphy",
+        "bio": ["Tim is a technologist with a passion for the things that can make a difference in people's lives, which is why he loves supporting Bench through building and developing their online presence."]
+    },
+    {
+        "id": 6,
+        "title": "Marketing Director",
+        "name": "Barbara Lash",
+        "bio": ["arbara is a multi-talented, veteran marketer, designer, and artist. She developed Bench's branding and leads initiatives to identify and connect with groups and places that can benefit from our services."]
     }
 ]
 
@@ -40,9 +53,14 @@ for (let item of teamNodes) {
     item.addEventListener("click", showStaffBio);
 }
 
+for (let item of aboutNodes) {
+    item.addEventListener("click", showStaffBio);
+}
+
 function showStaffBio(e) {
     let name, title, bio;
     const staffId = parseInt(e.target.dataset.staffid);
+    console.log(staffId);
     let staffMember = bios.find(element => staffId === element.id);
 
     name = staffMember.name;
