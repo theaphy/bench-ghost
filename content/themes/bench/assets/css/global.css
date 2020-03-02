@@ -136,7 +136,6 @@ section.constrained {
 }
 
 .bench-home-header {
-    margin-bottom: 100px;
     padding-top: 50px;
 }
 
@@ -144,7 +143,6 @@ section.constrained {
     text-align: center;
     max-width: 80%;
     margin: 0 auto;
-    margin-bottom: 40px;
 }
 
 .home-header_copy h4 {
@@ -166,6 +164,13 @@ img.home-header_art-img {
     border-bottom: 4px solid var(--primary);
 }
 
+.bench-narrative {
+    padding: 25px 0 100px 0;
+    max-width: 69%;
+    margin: 0 auto;
+    text-align: center;
+}
+
 .bench-home-services {
     max-width: 80%;
     margin: 0 auto;
@@ -177,7 +182,7 @@ img.home-header_art-img {
 }
 
 .home-services_sub-title {
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 
 .home-services_buckets {
@@ -403,10 +408,28 @@ img.home-header_art-img {
 }
 
 .home-team_project {
+    position: relative;
     background-image: url('{../images/prova-after.jpg}');
     background-position: 0px 0px;
     background-size: cover;
     display: none;
+}
+
+.home-team_project.home-team_project-two {
+    background-image: url('{../images/warsaw-horizontal.jpg');
+}
+
+.home-team_project::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: var(--primary);
+    opacity: 60%;
 }
 
 #jonathan-headshot {
@@ -536,7 +559,7 @@ img.home-header_art-img {
 .bench-home-footer {
     background-color: var(--primary);
     color: white;
-    padding: 10px 15px;
+    padding: 10px 25px 50px 25px;
 }
 
 .home-footer_inner {

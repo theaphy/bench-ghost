@@ -8,6 +8,7 @@
     {{> "site-wide-meta"}}
     {{ghost_head}}
 </head>
+
 <body class="{{body_class}}">
     <div id="staff-bio-popup">
         <div class="staff-bio-popup_inner">
@@ -17,17 +18,23 @@
     </div>
     {{> "site-nav"}}
     <section class="bench-home-header">
-        <div class="home-header_copy">
-            <h1>Bench Consulting is a team of placemakers focused on helping hyper-local projects come to life to
-                support vibrant, thriving communities.</h1>
-            <h4>We engage communities in all many phases of projects with a variety of goals and scopes, feel free to
-                start a conversation to see if our skills are a fit for your needs!</h4>
-        </div>
         <div class="home-header_art">
             <img src="{{asset "images/Full Bench Logo Feb 2020-crop.png"}}" alt="" class="home-header_art-img">
             <div class="line"></div>
         </div>
+        <div class="home-header_copy about-header">
+            <h1 class="about-header_name">bench <span style="font-weight: 100;">consulting</span></h1>
+            <h1 class="about-header_desc">A team of placemakers focused on helping hyper-local projects come to life to
+                support vibrant, thriving communities.</h1>
+        </div>
     </section>
+    <p class="bench-narrative">
+        The bench appears ordinary... found in many forms in often overlooked and ignored spaces. At Bench Consulting we
+        help you unlock the potential in the ordinary. We are dedicated to helping communities take a second look at
+        neglected, underused spaces and work with everyday users to unlock the power of these places. Powerful change
+        through the connection of people, place and ideas.
+        Meet us at benchand lets start a conversation.
+    </p>
     <section class="bench-home-services constrained">
         <h2 class="home-services_title">our services</h2>
         <p class="home-services_sub-title">Allow everyone to make the most of the missed opportunities in the vacant
@@ -54,23 +61,6 @@
             </div>
         </div>
     </section>
-    <section class="bench-home-team constrained">
-        <div class="home-team_inner">
-            <div class="home-team_copy">
-                <h2>who we are</h2>
-                <p>We’re a team with a passion for bringing communities together in collective efforts to build vibrant
-                    cities and towns across the world. We have backgrounds in design, law, nonprofits, grassroots
-                    organizing and have all traveled the world, learning what transforms our shared “spaces” into
-                    “places.”</p>
-            </div>
-            <div data-staffId="1" id="jonathan-headshot" class="home-team_member"></div>
-            <div class="home-team_project"></div>
-            <div data-staffId="2" id="bridget-headshot" class="home-team_member"></div>
-            <div data-staffId="3" id="mahala-headshot" class="home-team_member"></div>
-            <div data-staffId="4" id="ebrahim-headshot" class="home-team_member"></div>
-            <div class="home-team_project"></div>
-        </div>
-    </section>
     <section class="bench-home-our-work constrained">
         <h2 class="our-work_title">our work</h2>
         <div class="our-work_slider">
@@ -87,6 +77,23 @@
             <img src="{{asset "images/ashland.JPG"}}" alt="" class="slider-image">
         </div>
     </section>
+    <section class="bench-home-team constrained">
+        <div class="home-team_inner">
+            <div class="home-team_copy">
+                <h2>who we are</h2>
+                <p>We’re a team with a passion for bringing communities together in collective efforts to build vibrant
+                    cities and towns across the world. We have backgrounds in design, law, nonprofits, grassroots
+                    organizing and have all traveled the world, learning what transforms our shared “spaces” into
+                    “places.”</p>
+            </div>
+            <div data-staffId="1" id="jonathan-headshot" class="home-team_member"></div>
+            <div class="home-team_project"></div>
+            <div data-staffId="2" id="bridget-headshot" class="home-team_member"></div>
+            <div data-staffId="3" id="mahala-headshot" class="home-team_member"></div>
+            <div data-staffId="4" id="ebrahim-headshot" class="home-team_member"></div>
+            <div class="home-team_project home-team_project-two"></div>
+        </div>
+    </section>
     <section class="tree-divider">
         <img src="{{ asset "images/tree.png"}}" alt="">
     </section>
@@ -98,4 +105,5 @@
     {{> "footer"}}
     {{ghost_foot}}
 </body>
+
 </html>
