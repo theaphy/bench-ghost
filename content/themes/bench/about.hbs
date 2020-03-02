@@ -160,11 +160,7 @@
             </div>
         </div>
     </section>
-    <section id="contact" class="bench-home-contact constrained">
-        <div id="wufoo-z1zdlw000tpd32"></div>
-        <script
-            type="text/javascript"> var z1zdlw000tpd32; (function (d, t) { var s = d.createElement(t), options = { 'userName': 'benchconsulting', 'formHash': 'z1zdlw000tpd32', 'autoResize': true, 'height': '557', 'async': true, 'host': 'wufoo.com', 'header': 'show', 'ssl': true }; s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'secure.wufoo.com/scripts/embed/form.js'; s.onload = s.onreadystatechange = function () { var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; try { z1zdlw000tpd32 = new WufooForm(); z1zdlw000tpd32.initialize(options); z1zdlw000tpd32.display(); } catch (e) { } }; var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); })(document, 'script'); </script>
-    </section>
+    {{> "contact-form"}}
     <!--{{#get "authors"}}
         {{#foreach authors}}
             <p>{{name}}</p>

@@ -20,6 +20,12 @@ h6 {
     margin-bottom: 7px;
 }
 
+a, a:visited, a:active {
+    color: var(--primary);
+    cursor: pointer;
+    text-decoration: none;
+}
+
 p {
     font-size: larger;
     font-weight: 200;
@@ -559,6 +565,12 @@ img.home-header_art-img {
     margin: 0 auto;
     display: block;
     border: none;
+}
+
+.contact-email {
+    padding: 25px;
+    background-color: #eee;
+    margin-top: 25px;
 }
 
 .bench-home-footer {
