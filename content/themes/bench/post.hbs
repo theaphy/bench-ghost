@@ -10,68 +10,8 @@ into the {body} of the default.hbs template --}}
     <div class="inner">
 
         <article class="post-full {{post_class}} {{#unless feature_image}}no-image{{/unless}}">
-
-            <header class="post-full-header">
-
-                {{#if primary_tag}}
-                <section class="post-full-tags">
-                    {{#primary_tag}}
-                    <a href="{{url}}">{{name}}</a>
-                    {{/primary_tag}}
-                </section>
-                {{/if}}
-
-                <h1 class="post-full-title">{{title}}</h1>
-
-                {{#if custom_excerpt}}
-                <p class="post-full-custom-excerpt">{{custom_excerpt}}</p>
-                {{/if}}
-
-                <div class="post-full-byline">
-
-                    <section class="post-full-byline-content">
-
-                        <ul class="author-list">
-                            {{#foreach authors}}
-                            <li class="author-list-item">
-
-                                <div class="author-card">
-                                    {{#if profile_image}}
-                                    <img class="author-profile-image" src="{{img_url profile_image size="xs"}}" alt="{{name}}" />
-                                    {{else}}
-                                    <div class="author-profile-image">{{> "icons/avatar"}}</div>
-                                    {{/if}}
-                                    <div class="author-info">
-                                        {{#if bio}}
-                                        <div class="bio">
-                                            <h2>{{name}}</h2>
-                                            <p>{{bio}}</p>
-                                            <p><a href="{{url}}">More posts</a> by {{name}}.</p>
-                                        </div>
-                                        {{else}}
-                                        <h2>{{name}}</h2>
-                                        <p>Read <a href="{{url}}">more posts</a> by this author.</p>
-                                        {{/if}}
-                                    </div>
-                                </div>
-                            </li>
-                            {{/foreach}}
-                        </ul>
-
-                        <section class="post-full-byline-meta">
-                            <h4 class="author-name">{{authors}}</h4>
-                            <div class="byline-meta-content">
-                                <time class="byline-meta-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMM YYYY"}}</time>
-                                <span class="byline-reading-time"><span class="bull">&bull;</span> {{reading_time}}</span>
-                            </div>
-                        </section>
-
-                    </section>
-
-
-                </div>
-            </header>
-
+            <a href="/blog"><span class="article-back">back</span></a>
+            
             {{#if feature_image}}
             <figure class="post-full-image">
                 {{!-- This is a responsive image, it loads different sizes depending on device
@@ -89,6 +29,63 @@ into the {body} of the default.hbs template --}}
                 />
             </figure>
             {{/if}}
+            <header class="post-full-header">
+
+                {{#if primary_tag}}
+                <section class="post-full-tags">
+                    {{#primary_tag}}
+                    <a href="{{url}}">{{name}}</a>
+                    {{/primary_tag}}
+                </section>
+                {{/if}}
+
+                <h1 class="post-full-title">{{title}}</h1>
+                <section class="post-full-byline-meta">
+                    <div class="byline-meta-content">
+                        <time class="byline-meta-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMM YYYY"}}</time>
+                        <span class="byline-reading-time"><span class="bull">&bull;</span> {{reading_time}}</span>
+                    </div>
+                </section>
+
+                {{#if custom_excerpt}}
+                <p class="post-full-custom-excerpt">{{custom_excerpt}}</p>
+                {{/if}}
+
+                <div class="post-full-byline">
+
+                    <section class="post-full-byline-content">
+
+                        <ul class="author-list">
+                            {{#foreach authors}}
+                            <li class="author-list-item">
+
+                                <div class="author-card">
+                                    {{#if profile_image}}
+                                   <picture>
+                                       <img class="author-profile-image" src="{{img_url profile_image size="xs"}}" alt="{{name}}" />
+                                    </picture>
+                                    {{else}}
+                                    <div class="author-profile-image">{{> "icons/avatar"}}</div>
+                                    {{/if}}
+                                    <div class="author-info">
+                                        {{#if bio}}
+                                        <div class="bio">
+                                            <h4>{{name}}</h4>
+                                            <p>{{bio}}</p>
+                                        </div>
+                                        {{else}}
+                                        <h4>{{name}}</h4>
+                                        <p>Read <a href="{{url}}">more posts</a> by this author.</p>
+                                        {{/if}}
+                                    </div>
+                                </div>
+                            </li>
+                            {{/foreach}}
+                        </ul>
+                    </section>
+                </div>
+            </header>
+
 
             <section class="post-full-content">
                 <div class="post-content">
@@ -107,6 +104,7 @@ into the {body} of the default.hbs template --}}
             </section>
             --}}
 
+            {{> contact-form}}
         </article>
 
     </div>

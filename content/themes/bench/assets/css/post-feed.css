@@ -4,18 +4,8 @@
 }
 
 .post-feed {
-    max-width: 80%;
+    max-width: 60%;
     margin: 0 auto;
-}
-
-article {
-    margin-bottom: 50px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid var(--primary);
-}
-
-article:last-child {
-    border: none;
 }
 
 .post-feed section.post-card-excerpt {
@@ -28,3 +18,194 @@ article:last-child {
     padding-bottom: 10px;
     display: block;
 }
+
+/* actual post styling */
+article {
+    margin-bottom: 50px;
+    padding: 10px 30px;
+    border-bottom: 1px solid var(--primary);
+}
+
+article:last-child {
+    border: none;
+}
+
+.article-back::before {
+    content: "\21E0";
+    margin-right: 3px;
+}
+
+.post-full {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.post-full-image {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.post-full-title {
+    margin-bottom: 0;
+}
+
+.post-full-byline {
+    width: 70%;
+}
+
+.post-full-byline-meta {
+    font-size: 14px;
+    padding-bottom: 25px;
+}
+
+.post-full-custom-excerpt {
+    position: relative;
+    padding: 20px;
+    background-color: rgba(92, 193, 174, 0.15);
+}
+
+.post-full-custom-excerpt::before, .post-full-custom-excerpt::after {
+    content: '"';
+    font-size: 4em;
+    font-weight: bold;
+    color: var(--primary);
+    position: absolute;
+    opacity: 0.5;
+}
+
+.post-full-custom-excerpt::before {
+    left: 5px;
+    top: -25px;
+}
+
+.post-full-custom-excerpt::after {
+    right: 4px;
+    bottom: -60px;
+}
+
+.author-list {
+    padding: 0;
+}
+
+article .author-card {
+    display: flex;
+}
+
+article .author-card picture {
+    height: 50px;
+    width: 50px;
+    display: block;
+    flex-basis: 50px;
+}
+
+article .author-card picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+article .author-card .author-info {
+    flex-basis: 73%;
+    padding-left: 10px;
+    padding-bottom: 15px;
+}
+
+article .author-card .bio h4, article .author-card .bio p {
+    font-size: 18px;
+    margin: 0;
+} 
+
+@media screen and (max-width: 479px) {
+    .post-feed {
+        max-width: 80%;
+    }
+
+    .article-back::before {
+        content: "\21E0";
+        margin-right: 3px;
+    }
+
+    .post-full {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .post-full-image {
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .post-full-title {
+        margin-bottom: 0;
+    }
+    
+    .post-full-byline {
+        width: 100%;
+    }
+
+    .post-full-byline-meta {
+        font-size: 14px;
+        padding-bottom: 25px;
+    }
+
+    .post-full-custom-excerpt {
+        position: relative;
+        padding: 20px;
+        background-color: rgba(92, 193, 174, 0.15);
+    }
+
+    .post-full-custom-excerpt::before, .post-full-custom-excerpt::after {
+        content: '"';
+        font-size: 4em;
+        font-weight: bold;
+        color: var(--primary);
+        position: absolute;
+        opacity: 0.5;
+    }
+
+    .post-full-custom-excerpt::before {
+        left: 5px;
+        top: -25px;
+    }
+
+    .post-full-custom-excerpt::after {
+        right: 4px;
+        bottom: -60px;
+    }
+
+    .author-list {
+        padding: 0;
+    }
+
+    article .author-card {
+        display: flex;
+    }
+
+    article .author-card picture {
+        height: 50px;
+        width: 50px;
+        display: block;
+        flex-basis: 50px;
+    }
+
+    article .author-card picture img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    article .author-card .author-info {
+        flex-basis: 73%;
+        padding-left: 10px;
+        padding-bottom: 15px;
+    }
+
+    article .author-card .bio h4, article .author-card .bio p {
+        font-size: 14px;
+        margin: 0;
+    } 
+}
+
+
