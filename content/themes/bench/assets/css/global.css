@@ -240,6 +240,7 @@ img.home-header_art-img {
 }
 
 .bench-narrative {
+    padding-top: 25px;
     text-align: center;
     margin: 0 auto;
     margin-bottom: 50px;
@@ -282,11 +283,12 @@ img.home-header_art-img {
     padding: 15px;
     border: 2px solid #ddd;
     box-shadow: 0px 1px 5px rgba(50, 50, 50, 0.2);
+    margin-bottom: 25px;
 }
 
 .service-bucket img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     margin: 0 auto;
     margin-bottom: 10px;
@@ -295,8 +297,15 @@ img.home-header_art-img {
 .service-bucket h3 {
     max-width: 45%;
     margin: 0 auto;
-    margin-bottom: 25px;
+    margin-bottom: 5px;
     text-align: center;
+}
+
+.service-bucket h6 {
+    margin-bottom: 25px;
+    font-style: italic;
+    text-align: center;
+    font-size: 0.8em;
 }
 
 .bench-home-services.about {
@@ -579,6 +588,31 @@ img.home-header_art-img {
     left: -25px;
 } */
 
+.blog-news {
+    border: 2px solid var(--secondary);
+    padding: 25px;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.most-recent-post article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.most-recent-post article .post-card-image-link{
+    margin-right: 25px;
+}
+
+.most-recent-post img {
+    max-width: 300px;
+}
+
+.most-recent-post .post-card-content {
+    flex-basis: 50%;
+}
+
 .tree-divider {
     position: relative;
     border-bottom: 4px solid var(--primary);
@@ -593,6 +627,7 @@ img.home-header_art-img {
     margin: 0 auto;
     top: -45px;
 }
+
 
 #bench-contact {
     width: 0;
@@ -930,5 +965,23 @@ img.home-header_art-img {
     .bench-narrative {
         font-size: 1.25em;
         padding-top: 25px;
+    }
+
+    .most-recent-post article  {
+        flex-direction: column;
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    .most-recent-post article .post-card-image-link{
+        margin-right: 0;
+    }
+    
+    .most-recent-post img {
+        max-width: 300px;
+    }
+    
+    .most-recent-post .post-card-content {
+        flex-basis: 90%;
     }
 }

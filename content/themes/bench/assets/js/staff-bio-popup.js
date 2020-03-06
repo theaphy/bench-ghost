@@ -102,10 +102,13 @@ closeStaffPopup.addEventListener("click", () => {
 
 
 const benchContact = document.getElementById("bench-contact");
-console.log(benchContact);
 const closeContact = document.getElementById("contact-close");
 const contactOpen = document.getElementById("contact-modal");
-console.log(contactOpen);
+const inlineContactButtons = document.getElementsByClassName("contact-modal-open");
+
+for (let item of inlineContactButtons) {
+    item.addEventListener("click", showContact);
+}
 
 contactOpen.addEventListener("click", showContact);
 closeContact.addEventListener("click", hideContact);
@@ -114,8 +117,11 @@ function showContact() {
     benchContact.style.height = "100%";
     benchContact.style.width = "100%";
     benchContact.style.padding = "25px 0";
-    benchContact.style.position = "absolute";
+    benchContact.style.position = "fixed";
     benchContact.style.top = "0";
+    benchContact.style.left = "0";
+    benchContact.style.right = "0";
+    benchContact.style.bottom = "0";
     benchContact.style.overflow = "initial"
 
     document.body.style.overflow = "hidden";
