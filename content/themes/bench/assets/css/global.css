@@ -19,6 +19,10 @@ html {
     font-family: sans-serif;
 }
 
+iframe {
+    max-height: 500px;
+}
+
 p,
 h1,
 h2,
@@ -43,6 +47,7 @@ li {
 p {
     font-size: larger;
     font-weight: 200;
+    line-height: 1.25em;
 }
 
 button {
@@ -185,15 +190,23 @@ img.header-picture {
 
 .home-header_copy {
     position: absolute;
-    right: 35px;
-    height: 100%;
-    width: 45%;
+    right: 145px;
+    height: 380px;
+    padding: 30px;
+    width: 30%;
     background-color: var(--primary-rgba-nine);
     color: #fff;
 }
 
+.home-header_copy h1 {
+    font-size: 2.5em;
+    padding-top: 25px;
+}
+
 .home-header_copy h4 {
-    font-weight: 200;
+    font-weight: 100;
+    font-size: 2em;
+    line-height: 1.25em;
 }
 
 .home-header_art {
@@ -211,10 +224,39 @@ img.home-header_art-img {
     border-bottom: 4px solid var(--primary);
 }
 
+.about-header {
+   background-color: var(--primary);
+   display: flex;
+   padding: 10px;
+   color: #fff;
+}
+
+.about-header_name {
+    text-align: right;
+}
+
+.about-header_desc {
+    padding-left: 20px;
+}
+
 .bench-narrative {
-    padding: 25px 100px;
-    text-align: left;
+    text-align: center;
+    margin: 0 auto;
     margin-bottom: 50px;
+    width: 75%;
+    font-size: 1.5em;
+}
+
+.popup-cta {
+    padding-top: 25px;
+    color: var(--primary);
+    cursor: pointer;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.popup-cta p {
+    font-weight: bold;
 }
 
 .bench-home-services {
@@ -224,7 +266,6 @@ img.home-header_art-img {
 }
 
 .home-services_title {
-    text-align: center;
 }
 
 .home-services_sub-title {
@@ -259,7 +300,6 @@ img.home-header_art-img {
 }
 
 .bench-home-services.about {
-    padding-top: 50px;
 }
 
 .bench-home-services.about .home-services_title {
@@ -554,29 +594,36 @@ img.home-header_art-img {
     top: -45px;
 }
 
-.bench-home-contact {
-    max-width: 80%;
-    margin: 0 auto;
-    margin-bottom: 100px;
-    text-align: center;
+#bench-contact {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+    background-color: rgba(50,50,50,0.5); 
 }
 
+#contact-close {
+    text-align: right;
+    font-weight: bold;
+    cursor: pointer;
+    padding-bottom: 15px;
+}
 
-.home-contact_input {
+.contact-inner {
     width: 80%;
-    margin: 10px auto;
+    max-height: 750px;
+    padding: 25px;
+    margin: 0 auto;
+    background-color: #fff;
+    overflow: scroll;
 }
 
-.home-contact_textarea {
-    width: 80%;
-    margin: 0 auto;
-    margin-bottom: 10px;
+.wufoo #header.info h2 {
+    font-size: 5em!important;
 }
 
-.home-contact_form button {
-    margin: 0 auto;
-    display: block;
-    border: none;
+#header h2 {
+    font-size: 0.5em!important;
 }
 
 .contact-email {
@@ -610,14 +657,6 @@ img.home-header_art-img {
 }
 
 @media (min-width: 1000px) {
-    .home-header_copy h1 {
-        font-size: 1.75rem;
-    }
-    
-    .home-header_copy h4 {
-        font-size: 1.25rem;
-    }
-    
     img.home-header_art-img {
         max-width: 55%;
     }
@@ -735,6 +774,10 @@ img.home-header_art-img {
     .slider-image {
         max-width: 90%;
     }
+
+    .contact-inner {
+        width: 55%;
+    }
 }
 
 @media (min-width: 480px) and (max-width: 999px) {
@@ -742,8 +785,27 @@ img.home-header_art-img {
         padding: 5px 25px;
     }
 
+    iframe {
+        max-height: 600px;
+    }
+
     img.header-picture {
         object-position: -50px 0;
+    }
+
+    .home-header_copy {
+        right: 30px;
+        width: 45%;
+    }
+
+    .home-header_copy h1 {
+       font-size: 1.75em;
+       padding-top: 0;
+    }
+    
+    .home-header_copy h4 {
+        font-size: 1.5em;
+        line-height: 1.35em;
     }
 
     .home-team_inner {
@@ -786,6 +848,14 @@ img.home-header_art-img {
         max-width: 80%;
     }
 
+    iframe {
+        max-height: 750px;
+    }
+
+    #bench-contact {
+        top: 80px!important;
+    }
+
     .bench-home-nav {
         background-color: #fff;
         position: -webkit-sticky;
@@ -794,6 +864,7 @@ img.home-header_art-img {
         top: -1px;
         z-index: 1;
         box-shadow: 0px 2px 2px rgba(50, 50, 50, 0.2);
+        margin-bottom: 0;
     }
 
     .bench-home-nav img {
@@ -829,8 +900,35 @@ img.home-header_art-img {
     img.header-picture {
         object-position: 0 0;
     }
+
+    .home-header_copy {
+        right: 0;
+        height: 410px;
+        padding: 15px 10px;
+        width: 45%;
+    }
+
+    .home-header_copy h1 {
+        font-size: 2.1em;
+        padding-top: 25px;
+    }
+
+    .home-header_copy h4 {
+        font-weight: 100;
+        font-size: 1.2em;
+        line-height: 1.5em;
+    }
+
+    .about-header h1 {
+        
+    }
+
+    .about-header h4 {
+       
+    }
     
     .bench-narrative {
-        padding: 25px 30px;
+        font-size: 1.25em;
+        padding-top: 25px;
     }
 }

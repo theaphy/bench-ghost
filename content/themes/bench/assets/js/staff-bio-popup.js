@@ -1,5 +1,9 @@
 const teamNodes = document.getElementsByClassName("home-team_member");
 const aboutNodes = document.getElementsByClassName("copy");
+// let staffNodes = ["home-team_member", "copy"];
+// let htmlCollecion = staffNodes.map((node) => getElementBy("class", node));
+// console.log(htmlCollecion);
+
 const staffPopup = document.getElementById("staff-bio-popup");
 const closeStaffPopup = document.getElementById("close-staff");
 const content = document.getElementById("staff-inner_content");
@@ -46,12 +50,6 @@ const bios = [
     }
 ]
 
-closeStaffPopup.addEventListener("click", () => {
-    docBody[0].style.overflow = "auto";
-    staffPopup.style.display = "none";
-    content.innerHTML = "";
-});
-
 for (let item of teamNodes) {
     item.addEventListener("click", showStaffBio);
 }
@@ -64,16 +62,70 @@ function showStaffBio(e) {
     let name, title, bio;
     const staffId = parseInt(e.target.dataset.staffid);
     let staffMember = bios.find(element => staffId === element.id);
-
+    
     name = staffMember.name;
     title = staffMember.title;
     bio = staffMember.bio.map(graf => "<p>" + graf + "</p>");
-
+    
     nameHtml = "<h3>" + name + "</h3>";
     titleHtml = "<h4>" + title + "</h4>";
     bioHtml = bio.join("");
     content.innerHTML = content.innerHTML + nameHtml + titleHtml + bioHtml;
-
+    
     docBody[0].style.overflow = "hidden";
     staffPopup.style.display = "block";
+}
+
+closeStaffPopup.addEventListener("click", () => {
+    docBody[0].style.overflow = "auto";
+    staffPopup.style.display = "none";
+    content.innerHTML = "";
+});
+
+
+// function getElementBy(elementType, selector) {
+ 
+//     switch (elementType) {
+//         case 'tag':
+//             return document.getElementsByTagName(selector);
+//             break;
+//         case 'class':
+//             return document.getElementsByClassName(selector);
+//             break;
+//         case 'id':
+//             return document.getElementById(selector);
+//             break;
+//         default:
+//             console.log('Make sure you pass in a valid document selector type');
+//         }
+// }
+
+
+const benchContact = document.getElementById("bench-contact");
+console.log(benchContact);
+const closeContact = document.getElementById("contact-close");
+const contactOpen = document.getElementById("contact-modal");
+console.log(contactOpen);
+
+contactOpen.addEventListener("click", showContact);
+closeContact.addEventListener("click", hideContact);
+
+function showContact() {
+    benchContact.style.height = "100%";
+    benchContact.style.width = "100%";
+    benchContact.style.padding = "25px 0";
+    benchContact.style.position = "absolute";
+    benchContact.style.top = "0";
+    benchContact.style.overflow = "initial"
+
+    document.body.style.overflow = "hidden";
+}
+
+function hideContact() {
+   benchContact.style.width = 0;
+   benchContact.style.height = 0;
+   benchContact.style.overflow = "hidden";
+   benchContact.style.padding = 0;
+
+   document.body.style.overflow = "initial";
 }
