@@ -111,14 +111,11 @@
         <h2>news</h2>
         <div class="most-recent-post">
             {{#get "posts" limit="1"}}
-                {{#foreach posts}}
-                    {{> post-card}}
-                {{/foreach}}
+            {{#foreach posts}}
+            {{> post-card}}
+            {{/foreach}}
             {{/get}}
         </div>
-    </section>
-    <section class="tree-divider">
-        <img src="{{ asset "images/tree.png"}}" alt="">
     </section>
     {{> "contact-form"}}
     {{> "footer"}}

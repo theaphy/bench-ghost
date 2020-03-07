@@ -85,10 +85,13 @@ img {
 
 input {
     height: 35px;
+    width: 100%;
+    padding: 0;
+    border: none;
+    margin-bottom: 5px;
 }
 
 input, textarea {
-    border: 2px solid var(--primary);
     display: block;
     text-indent: 10px;
 }
@@ -106,7 +109,16 @@ section.constrained {
 }
 
 #mc_embed_signup .button{
-    padding: 0 18px 0 11px!important;
+    padding: 0 20px 0 0!important;
+}
+
+#mc_embed_signup p {
+    font-size: medium;
+    color: #333;
+}
+
+#mc_embed_signup label {
+    font-size: medium;
 }
 
 #staff-bio-popup {
@@ -613,23 +625,24 @@ img.home-header_art-img {
     flex-basis: 50%;
 }
 
-.tree-divider {
+.bench-divider {
     position: relative;
     border-bottom: 4px solid var(--primary);
-    margin: 100px 0;
+    margin: 150px 0 0 0;
 }
 
-.tree-divider img {
-    max-width: 80px;
+.bench-divider img {
+    max-width: 150px;
     position: absolute;
     left: 0;
     right: 0;
     margin: 0 auto;
-    top: -45px;
+    top: -85px;
 }
 
 
 #bench-contact {
+    z-index: 1;
     width: 0;
     height: 0;
     overflow: hidden;
@@ -667,6 +680,10 @@ img.home-header_art-img {
     margin-top: 25px;
 }
 
+.contact-modal-open {
+    margin-bottom: 25px;
+}
+
 .bench-home-footer {
     background-color: var(--primary);
     color: white;
@@ -685,13 +702,42 @@ img.home-header_art-img {
     max-width: 60%;
 }
 
-.home-footer_right img {
+.home-footer_top {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-mailto {
+    color: #fff;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+
+.home-footer_top img {
     display: inline-block;
     margin-left: 10px;
-    width: 25px;
+    width: 50px;
 }
 
 @media (min-width: 1000px) {
+    #mc_embed_signup p, #mc_embed_signup label {
+        width: 60%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    #mc_embed_signup p {
+        margin-bottom: 10px;
+    }
+
+    #mc_embed_signup input {
+        width: 60%;
+        margin: 0 auto;
+        margin-bottom: 5px;
+    }
+
     img.home-header_art-img {
         max-width: 55%;
     }
