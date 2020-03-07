@@ -13,6 +13,19 @@
     --secondary-rgba-one: rgba(234, 90, 104, 0.1);
 }
 
+@font-face {
+    font-family: 'architects-daughter';
+    src: url('../fonts/architects-daughter/ArchitectsDaughter.ttf');
+}
+@font-face {
+    font-family: 'roboto';
+    src: url('../fonts/roboto/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: 'league-gothic';
+    src: url('../fonts/league-gothic/LeagueGothic-Regular.otf');
+}
+
 body,
 html {
     margin: 0;
@@ -32,6 +45,13 @@ h5,
 h6 {
     margin: 0;
     margin-bottom: 7px;
+}
+
+h2 {
+    font-family: 'league-gothic';
+    font-size: 2.5em;
+    color: gray;
+    font-weight: 100;
 }
 
 a, a:visited, a:active {
@@ -437,27 +457,27 @@ img.home-header_art-img {
 }
 
 .about-team .team-member .image.jonathan  {
-    background-image: url('../images/headshots/jonathan.jpg');
+    background-image: url('../img/headshots/jonathan.jpg');
 }
 
 .about-team .team-member .image.bridget {
-    background-image: url('../images/headshots/bridget.jpg');
+    background-image: url('../img/headshots/bridget.jpg');
 }
 
 .about-team .team-member .image.mahala  {
-    background-image: url('../images/headshots/mahala.jpg');
+    background-image: url('../img/headshots/mahala.jpg');
 }
 
 .about-team .team-member .image.ebrahim  {
-    background-image: url('../images/headshots/ebrahim.jpg');    
+    background-image: url('../img/headshots/ebrahim.jpg');    
 }
 
 .about-team .team-member .image.tim  {
-    background-image: url('../images/headshots/tim.jpg');    
+    background-image: url('../img/headshots/tim.jpg');    
 }
 
 .about-team .team-member .image.barb  {
-    background-image: url('../images/headshots/barb.jpg');    
+    background-image: url('../img/headshots/barb.jpg');    
 }
 
 .home-team_inner {
@@ -493,14 +513,14 @@ img.home-header_art-img {
 
 .home-team_project {
     position: relative;
-    background-image: url('../images/prova-after.jpg');
+    background-image: url('../img/prova-after.jpg');
     background-position: 0px 0px;
     background-size: cover;
     display: none;
 }
 
 .home-team_project.home-team_project-two {
-    background-image: url('../images/warsaw-horizontal.jpg');
+    background-image: url('../img/warsaw-horizontal.jpg');
 }
 
 .home-team_project::after {
@@ -517,35 +537,34 @@ img.home-header_art-img {
 }
 
 #jonathan-headshot {
-    background-image: url('../images/headshots/jonathan.jpg');
+    background-image: url('../img/headshots/jonathan.jpg');
 }
 
 #bridget-headshot {
-    background-image: url('../images/headshots/bridget.jpg');
+    background-image: url('../img/headshots/bridget.jpg');
 }
 
 #mahala-headshot {
-    background-image: url('../images/headshots/mahala.jpg');
+    background-image: url('../img/headshots/mahala.jpg');
 }
 
 #ebrahim-headshot {
-    background-image: url('../images/headshots/ebrahim.jpg');    
+    background-image: url('../img/headshots/ebrahim.jpg');    
 }
 
 .home-team_project {
-    background-image: url('../images/prova-after.jpg');
+    background-image: url('../img/prova-after.jpg');
+}
+
+#testimonial-slider_inner {
+    display: flex;
+    transform: translateX(0);
+    transition: all 0.5s;
 }
 
 .our-work_slider {
-    
-}
-
-.our-work_title {
-    
-}
-
-.our-work_slider {
-    
+    min-width: 100%;
+    padding-right: 500px;
 }
 
 .testimonial-img {
@@ -576,29 +595,29 @@ img.home-header_art-img {
     box-shadow: 0px 1px 5px rgba(50,50,50,0.2);
 }
 
-.slider-image {
-    
+
+.testimonial-slider {
+    position: relative;
 }
 
 /* placeholder arrows */
-/* .our-work_slider:before, .our-work_slider:after {
+.arrow {
     content: "\25B7";
     position: absolute;
-    top: 47%;
-    font-size: 1.2em;
+    top: 25%;
+    font-size: 1em;
     color: var(--secondary);
     cursor: pointer;
+    z-index: 1;
 }
 
-.our-work_slider:after {
-    right: -25px;            
+.arrow-left {
+    left: -130px;
 }
 
-
-.our-work_slider:before {
-    transform: scaleX(-1);            
-    left: -25px;
-} */
+.arrow-right {
+    right: -100px;     
+}
 
 .blog-news {
     border: 2px solid var(--secondary);
@@ -733,7 +752,6 @@ img.home-header_art-img {
     }
 
     #mc_embed_signup input {
-        width: 60%;
         margin: 0 auto;
         margin-bottom: 5px;
     }

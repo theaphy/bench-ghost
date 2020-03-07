@@ -25,7 +25,7 @@
                     vibrant, thriving communities.</h4>
             </div>
             <picture>
-                <img class="header-picture" src="{{asset "images/cool-bench-crop.jpeg"}}" alt="">
+                <img class="header-picture" <img src="{{asset "img/cool-bench-crop.jpeg"}}" alt="">
             </picture>
         </div>
         <p class="bench-narrative">
@@ -36,7 +36,7 @@
             through the connection of people, place and ideas.
         </p>
         <div class="home-header_art">
-            <img src="{{asset "images/Full Bench Logo Feb 2020-crop.png"}}" alt="" class="home-header_art-img">
+            <img <img src="{{asset "img/Full Bench Logo Feb 2020-crop.png"}}" alt="" class="home-header_art-img">
             <div class="line"></div>
         </div>
         <div class="popup-cta contact-modal-open">
@@ -50,14 +50,14 @@
             places to create a vibrant, thriving, connected community increasing local qualities of life.</p>
         <div class="home-services_buckets">
             <div class="service-bucket">
-                <img src="{{asset "images/services/street.png"}}" alt="">
+                <img <img src="{{asset "img/services/street.png"}}" alt="">
                 <h3 style="color: #72CAC5;" class="service-bucket_title">placemaking plan</h3>
                 <h6>2-4 month engagement</h6>
                 <p>The Placemaking Plan is designed to meet you where you are. Our team will research your opportunities
                     and assets and generate an outcome oriented roadmap to help you get a win. </p>
             </div>
             <div class="service-bucket">
-                <img src="{{asset "images/services/main-street.png"}}" alt="">
+                <img <img src="{{asset "img/services/main-street.png"}}" alt="">
                 <h3 style="color: #E39E2F;" class="service-bucket_title">single intervention</h3>
                 <h6>3-12 month engagement</h6>
                 <p>We will use all of our expertise from research, ideation, community engagement and fundraising to
@@ -65,7 +65,7 @@
                 </p>
             </div>
             <div class="service-bucket">
-                <img src="{{asset "images/services/big-mural.png"}}" alt="">
+                <img <img src="{{asset "img/services/big-mural.png"}}" alt="">
                 <h3 style="color: #E8453B;" id="last-bucket_title" class="service-bucket_title">long term engagement
                 </h3>
                 <h6>1-5 year engagement</h6>
@@ -76,18 +76,66 @@
     </section>
     <section class="bench-home-our-work constrained">
         <h2 class="our-work_title">testimonials</h2>
-        <div class="our-work_slider">
-            <div class="slider-copy">
-                <p class="testimonial-copy">
-                    <img src="{{asset "images/beth-reynolds.jpeg"}}" alt="" class="testimonial-img">
-                    <span class="testimonial-attr">Beth Reynolds <span class="testimonial-attr_feat">The Corner
-                            Spot</span> Town of Ashland, MA</span>
-                    “I have to say that the buzz around town has been amazing, this project has done so much for our
-                    little town in just a few weeks, people are excited for change, they are more optimistic that the
-                    leadership is getting things done. It has done so much more than transform an ugly lot into a cool
-                    park. Keep doing what you are doing, this is the good stuff and you are so great at it!”</p>
+        <div class="testimonial-slider">
+            <div id="left" class="arrow arrow-left">arrow-left</div>
+            <div id="right" class="arrow arrow-right">arrow-right</div>
+            <div id="testimonial-slider_inner">
+                <div class="our-work_slider">
+                    <div class="slider-copy">
+                        <p class="testimonial-copy">
+                            <img <img src="{{asset "img/beth-reynolds.jpeg"}}" alt="" class="testimonial-img">
+                            <span class="testimonial-attr">Beth Reynolds <span class="testimonial-attr_feat">The Corner
+                                    Spot</span> Town of Ashland, MA</span>
+                            “I have to say that the buzz around town has been amazing, this project has done so much for
+                            our
+                            little town in just a few weeks, people are excited for change, they are more optimistic
+                            that
+                            the
+                            leadership is getting things done. It has done so much more than transform an ugly lot into
+                            a
+                            cool
+                            park. Keep doing what you are doing, this is the good stuff and you are so great at it!”</p>
+                    </div>
+                    <img <img src="{{asset "img/ashland.JPG"}}" alt="" class="slider-image">
+                </div>
+                <div class="our-work_slider">
+                    <div class="slider-copy">
+                        <p class="testimonial-copy">
+                            <img <img src="{{asset "img/beth-reynolds.jpeg"}}" alt="" class="testimonial-img">
+                            <span class="testimonial-attr">Neth Reynolds <span class="testimonial-attr_feat">The Corner
+                                    Spot</span> Town of Ashland, MA</span>
+                            “I have to say that the buzz around town has been amazing, this project has done so much for
+                            our
+                            little town in just a few weeks, people are excited for change, they are more optimistic
+                            that
+                            the
+                            leadership is getting things done. It has done so much more than transform an ugly lot into
+                            a
+                            cool
+                            park. Keep doing what you are doing, this is the good stuff and you are so great at it!”</p>
+                    </div>
+                    <img <img src="{{asset "img/ashland.JPG"}}" alt="" class="slider-image">
+                </div>
+                <div class="our-work_slider">
+                    <div class="slider-copy">
+                        <p class="testimonial-copy">
+                            <img <img src="{{asset "img/beth-reynolds.jpeg"}}" alt="" class="testimonial-img">
+                            <span class="testimonial-attr">Zeth Reynolds <span class="testimonial-attr_feat">The Corner
+                                    Spot</span> Town of Ashland, MA</span>
+                            “I have to say that the buzz around town has been amazing, this project has done so much for
+                            our
+                            little town in just a few weeks, people are excited for change, they are more optimistic
+                            that
+                            the
+                            leadership is getting things done. It has done so much more than transform an ugly lot into
+                            a
+                            cool
+                            park. Keep doing what you are doing, this is the good stuff and you are so great at it!”</p>
+                    </div>
+                    <img <img src="{{asset "img/ashland.JPG"}}" alt="" class="slider-image">
+                </div>
             </div>
-            <img src="{{asset "images/ashland.JPG"}}" alt="" class="slider-image">
+            <div class="slider-dots">ooo</div>
         </div>
     </section>
     <section class="bench-home-team constrained">
@@ -117,6 +165,7 @@
             {{/get}}
         </div>
     </section>
+    <script src="{{asset "js/slider.js"}}"></script>
     {{> "contact-form"}}
     {{> "footer"}}
     {{ghost_foot}}
