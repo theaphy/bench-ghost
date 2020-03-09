@@ -1,6 +1,8 @@
 :root {
-    --primary: #5CC1AE;
-    --secondary: #EA5A68;
+    --primary: #56C3Af;
+    --secondary: #14686D;
+    --tertiary: #F2BF2C;
+    --quaternary: #F33546; 
 }
 
 .post-feed {

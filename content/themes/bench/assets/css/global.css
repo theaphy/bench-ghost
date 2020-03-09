@@ -1,6 +1,8 @@
 :root {
-    --primary: #5CC1AE;
-    --secondary: #EA5A68;
+    --primary: #56C3Af;
+    --secondary: #14686D;
+    --tertiary: #F2BF2C;
+    --quaternary: #F33546; 
     --primary-rgba-nine: rgba(92, 193, 174, 0.9);
     --secondary-rgba-nine: rgba(234, 90, 104, 0.9);
     --primary-rgba-threequarter: rgba(92, 193, 174, 0.75);
@@ -210,6 +212,10 @@ section.constrained {
     padding-bottom: 50px;
 }
 
+.bench-home-header.about {
+    padding: 50px 0;
+}
+
 .home-header_photo-section {
     position: relative;
     height: 440px;
@@ -259,7 +265,7 @@ img.home-header_art-img {
 .about-header {
    background-color: var(--primary);
    display: flex;
-   padding: 10px;
+   padding: 30px;
    color: #fff;
 }
 
@@ -352,7 +358,6 @@ img.home-header_art-img {
 }
 
 .bench-home-services.about .home-services_buckets {
-    border: 2px solid var(--primary);
 }
 
 
@@ -360,20 +365,80 @@ img.home-header_art-img {
     border: none;
     box-shadow: none;
     text-align: center;
-    flex-basis: 100px;
     margin-bottom: 0px;
 }
-
 
 .bench-home-services.about .home-services_buckets .service-bucket h4 {
     max-width: 100%;
     text-transform: uppercase;
     font-size: 1.4em;
     font-weight: bold;
+    position: relative;
+    color: #fff;
+    padding: 25px 0px 25px 25px;
+}
+
+.bench-home-services.about .home-services_buckets .service-bucket h4::before {
+    content: "";
+    width: 0;
+    left: 0;
+    height: 0;
+    top: 0;
+    position: absolute;
+    border-top: 38px solid transparent;
+    border-left: 20px solid #fff;
+    border-bottom: 38px solid transparent;
 }
 
 .bench-home-services.about .home-services_buckets .service-bucket h4::after {
-    content: ""!important;
+    content: "";
+    width: 0;
+    top: 0;
+    right: -20px;
+    height: 0;
+    position: absolute;
+    border-top: 38px solid transparent;
+    border-bottom: 38px solid transparent;
+}
+
+.bench-home-services.about .home-services_buckets .service-bucket h4.facilitate {
+    background-color: var(--primary);
+}
+
+.bench-home-services.about .home-services_buckets .service-bucket h4.facilitate:after{
+    border-left: 20px solid var(--primary);
+}
+
+.bench-home-services.about .home-services_buckets .service-bucket h4.ideate {
+    background-color: var(--secondary);
+}
+
+.bench-home-services.about .home-services_buckets .service-bucket h4.ideate:after{
+    border-left: 20px solid var(--secondary);
+}
+
+.bench-home-services.about .home-services_buckets .service-bucket h4.collaborate {
+    background-color: var(--tertiary);
+}
+
+.bench-home-services.about .home-services_buckets .service-bucket h4.collaborate:after{
+    border-left: 20px solid var(--tertiary);
+}
+
+.bench-home-services.about .home-services_buckets .service-bucket h4.empower {
+    background-color: var(--quaternary);
+}
+
+.bench-home-services.about .home-services_buckets .service-bucket h4.empower:after{
+    border-left: 20px solid var(--quaternary);
+}
+
+.bench-home-services.about .home-services_buckets .service-bucket h4.iterate {
+    background-color: var(--primary);
+}
+
+.bench-home-services.about .home-services_buckets .service-bucket h4.iterate:after{
+    border-left: 20px solid var(--primary);
 }
 
 .bench-home-services.about .home-services_buckets p {
@@ -413,7 +478,9 @@ img.home-header_art-img {
 
 .team-member .sub-title {
     margin-bottom: 5px;
+    font-size: 0.9em;
     color: var(--primary);
+    font-family: 'architects-daughter';
 }
 
 .team-member .copy {
@@ -558,13 +625,12 @@ img.home-header_art-img {
 
 #testimonial-slider_inner {
     display: flex;
-    transform: translateX(0);
-    transition: all 0.5s;
+    overflow: hidden;
 }
 
 .our-work_slider {
-    min-width: 100%;
-    padding-right: 500px;
+    height: 100%;
+    padding-right: 100%;
 }
 
 .testimonial-img {
@@ -759,6 +825,20 @@ img.home-header_art-img {
     img.home-header_art-img {
         max-width: 55%;
     }
+
+    .about-header {
+        padding: 50px;
+        justify-content: center;
+    }
+
+    .about-header_name {
+        font-size: 2.2em;
+    }
+
+    .about-header_desc {
+        max-width: 50%;
+        font-size: 1.75em;
+    }
     
     .home-services_buckets {
         flex-direction: row;
@@ -829,12 +909,14 @@ img.home-header_art-img {
     }
 
     .our-work_title {
-        margin-bottom: 165px;
     }
 
     .our-work_slider {
         position: relative;
         right: -61px;
+        height: 100%;
+        min-width: 100%;
+        padding: 175px 100px 0 0;
     }
 
     .slider-copy {
@@ -1018,14 +1100,6 @@ img.home-header_art-img {
         line-height: 1.5em;
     }
 
-    .about-header h1 {
-        
-    }
-
-    .about-header h4 {
-       
-    }
-    
     .bench-narrative {
         font-size: 1.25em;
         padding-top: 25px;
