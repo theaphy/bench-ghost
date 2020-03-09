@@ -46,7 +46,10 @@ const bios = [
         "id": 6,
         "title": "Marketing Director",
         "name": "Barbara Lash",
-        "bio": ["arbara is a multi-talented, veteran marketer, designer, and artist. She developed Bench's branding and leads initiatives to identify and connect with groups and places that can benefit from our services."]
+        "bio": ["I seek to foster authentic and transparent connections through our marketing work, while telling the important stories and sharing the powerful and transformative work of our partners. When people feel empowered and have the tools and support to implement change, the ripple effect on their communities is undeniable.",
+        "For more than 30 years, I’ve worn a myriad of hats: real estate developer, magazine editor, ad agency creative director, business analyst, events producer, marketing director, gallery owner and artist. While they seem like disparate industries and vocations, the same underlying passions and principles exist -- the desire to create authentic and poignant connections and provide people with the solutions they need and want.",
+        "The same thinking is infused in my work for both Patronicity and bench.",
+        "Outside of the office, I’m thrilled to be a community placemaker in my own town! I’ve been involved in spearheading local community arts programming, created and hosted large-scale arts events and participated in more than 500+ arts festivals throughout the US. I’ve also created multiple public murals, yarn-bombing and temporary placemaking projects in several cities. Art  is my passion and I advocate for communities to use it as a form of self-expression and identity."]
     }
 ]
 
