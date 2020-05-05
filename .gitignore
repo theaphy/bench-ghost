@@ -1,3 +1,5 @@
 .ghost-cli
 .ghostpid
 versions/
+/logs/
+/logs/
