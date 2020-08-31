@@ -1,7 +1,11 @@
 {
     "name": "bench-consult",
      "version": "1.0.0",
+     "config": {
+         "posts_per_page": 4
+     },
      "author": {
+         "name": "Bench Consulting",
          "email": "tim@patronicity.com"
      },
      "keywords": ["ghost-theme"]
