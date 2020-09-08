@@ -577,7 +577,7 @@ img.home-header_art-img {
     background-position: 0px -30px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: -100px;
+    background-position-y: -75px;
     min-height: 350px;
     -ms-grid-row: span 1;
     grid-row-start: span 1;
@@ -1087,6 +1087,10 @@ img.home-header_art-img {
         margin-bottom: 0;
     }
 
+    .home-nav_logo-link {
+        margin-bottom: 0;
+    }
+
     .bench-home-nav img {
         max-width: 100px;
     }
@@ -1105,6 +1109,10 @@ img.home-header_art-img {
     
     .bench-home-nav ul li::after {
         margin-left: 2px;
+    }
+
+    #contact-modal {
+        margin-top: -10px;
     }
 
     #staff-bio-popup {
