@@ -2,6 +2,7 @@ routes:
   /about/: about
   /services/: services
   /blog/: blog
+  /winter-streets/: winter
 
 collections:
   /:

@@ -1,0 +1,60 @@
+.winter-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../img/winter/bench-winter-streets.png');
+    color: #fff;
+    padding: 25px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+}
+
+.winter-hero-copy {
+
+}
+
+.winter-turq-circ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    padding: 25px;
+    border-radius: 100%;
+    margin: 0 auto;
+    background-color: #56C3Af;
+}
+
+.winter-hero h1 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+.winter-hero h1 span {
+    font-family: Roboto-Bold;
+}
+
+.winter-hero h4 {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 25px;
+    font-weight: bold;
+    font-family: Roboto-Bold;
+    text-shadow: 1px 2px 2px rgba(50, 50, 50, 0.5);
+}
+
+@media (min-width: 751px){
+    .winter-hero {
+        height: 350px;
+    }
+
+    .winter-hero h1 {
+        font-size: 44px;
+    }
+
+    .winter-hero h4 { 
+        font-size: 28px;
+    }
+}
