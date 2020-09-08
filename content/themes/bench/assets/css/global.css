@@ -192,10 +192,10 @@ section.constrained {
 
 .bench-home-nav ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     list-style: none;
     padding: 0;
-    width: 15%;
+    width: 40%;
     font-size: 1.2em;
 }
 
@@ -577,7 +577,8 @@ img.home-header_art-img {
     background-position: 0px -30px;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 245px;
+    background-position-y: -100px;
+    min-height: 350px;
     -ms-grid-row: span 1;
     grid-row-start: span 1;
     -ms-grid-row-span: 1;
@@ -838,7 +839,7 @@ img.home-header_art-img {
     width: 50px;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
     #mc_embed_signup p, #mc_embed_signup label {
         width: 60%;
         margin: 0 auto;
@@ -998,7 +999,7 @@ img.home-header_art-img {
     }
 }
 
-@media (min-width: 480px) and (max-width: 999px) {
+@media (min-width: 751px) and (max-width: 1199px) {
     .bench-home-nav {
         padding: 5px 25px;
     }
@@ -1061,7 +1062,7 @@ img.home-header_art-img {
     }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 750px) {
     section.constrained {
         max-width: 80%;
     }
@@ -1077,6 +1078,7 @@ img.home-header_art-img {
     .bench-home-nav {
         background-color: #fff;
         position: -webkit-sticky;
+        flex-wrap: wrap;
         position: sticky;
         padding: 15px 10px 10px 10px;
         top: -1px;
@@ -1086,16 +1088,15 @@ img.home-header_art-img {
     }
 
     .bench-home-nav img {
-        max-width: 50px;
+        max-width: 100px;
     }
     
     .bench-home-nav ul {
-        display: block;
         margin: 0;
         margin-bottom: 5px;
         order: 3;
-        width: 25%;
-        font-size: 0.9em;
+        width: 100%;
+        font-size: 1.1em;
     }
 
     .bench-home-nav ul li:first-child {
@@ -1159,11 +1160,5 @@ img.home-header_art-img {
     
     .most-recent-post .post-card-content {
         flex-basis: 90%;
-    }
-
-    .contact-modal-open {
-        max-width: 80%;
-        padding-bottom: 10px;
-        margin: 0 auto;
     }
 }
