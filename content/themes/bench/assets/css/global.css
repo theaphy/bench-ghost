@@ -186,8 +186,7 @@ section.constrained {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 25px;
-    margin-bottom: 25px;
+    padding: 10px;
 }
 
 .bench-home-nav ul {
@@ -197,6 +196,10 @@ section.constrained {
     padding: 0;
     width: 40%;
     font-size: 1.2em;
+}
+
+.home-nav_logo-link.contact-modal-open {
+    margin-bottom: 0;
 }
 
 .bench-home-nav ul li::after {
@@ -1084,10 +1087,6 @@ img.home-header_art-img {
         top: -1px;
         z-index: 1;
         box-shadow: 0px 2px 2px rgba(50, 50, 50, 0.2);
-        margin-bottom: 0;
-    }
-
-    .home-nav_logo-link {
         margin-bottom: 0;
     }
 
