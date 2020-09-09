@@ -3,7 +3,9 @@
 }
 
 .winter-btns a {
+    display: inline-block;
     padding: 0 25px;
+    margin: 5px;
 }
 
 .winter-hero {
@@ -211,7 +213,37 @@
 .guide-cta h1 {
     font-family: architects-daughter;
     font-size: 24px;
+    color: var(--primary);
+}
+
+.winter-info {
+    text-align: center;
+}
+
+.winter-info h1 {
+    font-family: architects-daughter;
+    font-size: 24px;
     color: var(--primary);;
+}
+
+@media (max-width:750px) {
+    .mason {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mason .brick-overlay p {
+        padding: 10px 0;
+    }
+
+    .guide-box {
+        flex-direction: column;
+    }
+
+    .guide-box .left { 
+        width: 100%;
+    }
+
 }
 
 @media (min-width: 751px){
