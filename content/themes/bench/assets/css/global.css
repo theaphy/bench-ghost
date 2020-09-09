@@ -61,7 +61,7 @@ h2 {
     font-size: 2.5em;
     color: gray;
     font-weight: 100;
-    margin-bottom: 25px;
+    margin-bottom: 5px;
 }
 
 a, a:visited, a:active {
@@ -319,51 +319,6 @@ img.home-header_art-img {
     margin-bottom: 100px;
 }
 
-.home-services_title {
-}
-
-.home-services_sub-title {
-    margin-bottom: 25px;
-}
-
-.home-services_buckets {
-    display: flex;
-    flex-direction: column;
-}
-
-.service-bucket {
-    position: relative;
-    padding: 15px;
-    border: 2px solid #ddd;
-    box-shadow: 0px 1px 5px rgba(50, 50, 50, 0.2);
-    margin-bottom: 25px;
-}
-
-.service-bucket img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin: 0 auto;
-    margin-bottom: 10px;
-}
-
-.service-bucket h3 {
-    max-width: 45%;
-    margin: 0 auto;
-    margin-bottom: 5px;
-    text-align: center;
-}
-
-.service-bucket h6 {
-    margin-bottom: 25px;
-    font-style: italic;
-    text-align: center;
-    font-size: 0.8em;
-}
-
-.bench-home-services.about {
-}
-
 .bench-home-services.about .home-services_title {
     text-align: left;
 }
@@ -372,99 +327,8 @@ img.home-header_art-img {
     margin-bottom: 25px;
 }
 
-.bench-home-services.about .home-services_buckets {
-}
-
-
-.bench-home-services.about .home-services_buckets .service-bucket {
-    border: none;
-    box-shadow: none;
-    text-align: center;
-    margin-bottom: 0px;
-}
-
-.bench-home-services.about .home-services_buckets .service-bucket h4 {
-    max-width: 100%;
-    text-transform: uppercase;
-    font-size: 1.4em;
-    font-weight: bold;
-    position: relative;
-    color: #fff;
-    padding: 25px 0px 25px 25px;
-}
-
-.bench-home-services.about .home-services_buckets .service-bucket h4::before {
-    content: "";
-    width: 0;
-    left: 0;
-    height: 0;
-    top: 0;
-    position: absolute;
-    border-top: 38px solid transparent;
-    border-left: 20px solid #fff;
-    border-bottom: 38px solid transparent;
-}
-
-.bench-home-services.about .home-services_buckets .service-bucket h4::after {
-    content: "";
-    width: 0;
-    top: 0;
-    right: -20px;
-    height: 0;
-    position: absolute;
-    border-top: 38px solid transparent;
-    border-bottom: 38px solid transparent;
-}
-
-.bench-home-services.about .home-services_buckets .service-bucket h4.facilitate {
-    background-color: var(--primary);
-}
-
-.bench-home-services.about .home-services_buckets .service-bucket h4.facilitate:after{
-    border-left: 20px solid var(--primary);
-}
-
-.bench-home-services.about .home-services_buckets .service-bucket h4.ideate {
-    background-color: var(--secondary);
-}
-
-.bench-home-services.about .home-services_buckets .service-bucket h4.ideate:after{
-    border-left: 20px solid var(--secondary);
-}
-
-.bench-home-services.about .home-services_buckets .service-bucket h4.collaborate {
-    background-color: var(--tertiary);
-}
-
-.bench-home-services.about .home-services_buckets .service-bucket h4.collaborate:after{
-    border-left: 20px solid var(--tertiary);
-}
-
-.bench-home-services.about .home-services_buckets .service-bucket h4.empower {
-    background-color: var(--quaternary);
-}
-
-.bench-home-services.about .home-services_buckets .service-bucket h4.empower:after{
-    border-left: 20px solid var(--quaternary);
-}
-
-.bench-home-services.about .home-services_buckets .service-bucket h4.iterate {
-    background-color: var(--primary);
-}
-
-.bench-home-services.about .home-services_buckets .service-bucket h4.iterate:after{
-    border-left: 20px solid var(--primary);
-}
-
-.bench-home-services.about .home-services_buckets p {
-}
-
-.home-services_buckets.about-service_buckets {
-    text-align: center;
-}
-
-.about-service_buckets h4 {
-    width: 100%;
+.home-services_sub-title {
+    margin-bottom: 25px;
 }
 
 .about_sub-title {
@@ -874,15 +738,6 @@ img.home-header_art-img {
     .about-header_desc {
         max-width: 50%;
         font-size: 1.75em;
-    }
-    
-    .home-services_buckets {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .service-bucket {
-        max-width: 27%;
     }
 
     .bench-home-team {
