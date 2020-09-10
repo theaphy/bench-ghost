@@ -173,8 +173,13 @@
 }
 
 .brick3 { 
-    grid-area: 1 / 2 / 3 / 3; 
+    grid-area: 1 / 2 / 2 / 2; 
     background-image: url(../img/winter/image1.png);
+}
+
+.brick4 { 
+    grid-area: 2 / 2 / 3 / 3; 
+    background-image: url(../img/winter/bright-light-show.jpg);
 }
 
 .brick-overlay {
@@ -234,6 +239,7 @@
     .mason {
         display: flex;
         flex-direction: column;
+        height: 700px;
     }
 
     .mason .brick-overlay p {
