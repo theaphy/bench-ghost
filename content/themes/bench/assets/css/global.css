@@ -116,6 +116,10 @@ button.solid {
     color: #fff;
 }
 
+button.round {
+    border-radius: 50px;
+}
+
 img {
     width: 100%;
     height: auto;
