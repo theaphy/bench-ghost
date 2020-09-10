@@ -26,6 +26,14 @@
     src: url('../fonts/roboto/Roboto-Light.ttf');
 }
 @font-face {
+    font-family: 'roboto-bold';
+    src: url('../fonts/roboto/Roboto-Bold.ttf');
+}
+@font-face {
+    font-family: 'roboto-light';
+    src: url('../fonts/roboto/Roboto-Light.ttf');
+}
+@font-face {
     font-family: 'league-gothic';
     src: url('../fonts/league-gothic/LeagueGothic-Regular.otf');
 }
