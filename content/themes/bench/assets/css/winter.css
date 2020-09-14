@@ -16,8 +16,6 @@
     background-color: var(--quaternary);
 }
 
-
-
 .winter-hero {
     display: flex;
     align-items: center;
@@ -240,6 +238,15 @@
     font-family: architects-daughter;
     font-size: 24px;
     color: var(--primary);;
+}
+
+.winter-info h3 {
+    font-family: architects-daughter;
+    color: var(--quaternary);
+}
+
+.winter-info button.red {
+    background-color: var(--quaternary);
 }
 
 @media (max-width:750px) {
