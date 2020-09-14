@@ -230,6 +230,35 @@
     color: var(--primary);
 }
 
+.winter-form {
+    text-align: left;
+}
+
+.winter-form-wrapper .mc-field-group {
+    width: 100%;
+}
+
+.winter-form input.winter-form-input {
+    border: 1px solid var(--primary);
+    border-radius: 3px;
+}
+
+.winter-form input[type="submit"] {
+    margin: 0 auto;
+    cursor: pointer;
+    width: 50%;
+    border-radius: 50px;
+    background-color: var(--primary);
+    color: #fff;
+    font-family: sans-serif;
+    font-size: larger;
+}
+
+.winter-form .response {
+    color: var(--primary);
+    font-weight: bold;
+}
+
 .winter-info {
     text-align: center;
 }
@@ -283,5 +312,10 @@
 @media (min-width: 1199px) {
     .winter-how .home-services_buckets .service-bucket {
         min-width: 20%;
+    }
+
+    .winter-form .winter-form-wrapper {
+        width: 50%;
+        margin: 0 auto;
     }
 }
