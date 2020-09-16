@@ -1,6 +1,6 @@
 .ghost-cli
 .ghostpid
 versions/
-/logs/
-/logs/
+logs/
 scripts/
+data/
