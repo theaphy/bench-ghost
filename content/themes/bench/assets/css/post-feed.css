@@ -42,6 +42,10 @@ article:last-child {
     margin: 0 auto;
 }
 
+.post-full-tags {
+    margin: 25px 0;
+}
+
 .post-full-image {
     margin: 0;
     padding: 10px 0;
@@ -57,7 +61,6 @@ article:last-child {
 
 .post-full-byline-meta {
     font-size: 14px;
-    padding-bottom: 25px;
 }
 
 .post-full-custom-excerpt {
@@ -66,24 +69,24 @@ article:last-child {
     background-color: rgba(92, 193, 174, 0.15);
 }
 
-.post-full-custom-excerpt::before, .post-full-custom-excerpt::after {
+/* .post-full-custom-excerpt::before, .post-full-custom-excerpt::after {
     content: '"';
     font-size: 4em;
     font-weight: bold;
     color: var(--primary);
     position: absolute;
     opacity: 0.5;
-}
+} */
 
-.post-full-custom-excerpt::before {
+/* .post-full-custom-excerpt::before {
     left: 5px;
     top: -25px;
-}
+} */
 
-.post-full-custom-excerpt::after {
+/* .post-full-custom-excerpt::after {
     right: 4px;
     bottom: -60px;
-}
+} */
 
 .author-list {
     padding: 0;
@@ -148,7 +151,6 @@ article .author-card .bio h4, article .author-card .bio p {
 
     .post-full-byline-meta {
         font-size: 14px;
-        padding-bottom: 25px;
     }
 
     .post-full-custom-excerpt {
@@ -157,7 +159,7 @@ article .author-card .bio h4, article .author-card .bio p {
         background-color: rgba(92, 193, 174, 0.15);
     }
 
-    .post-full-custom-excerpt::before, .post-full-custom-excerpt::after {
+    /* .post-full-custom-excerpt::before, .post-full-custom-excerpt::after {
         content: '"';
         font-size: 4em;
         font-weight: bold;
@@ -174,7 +176,7 @@ article .author-card .bio h4, article .author-card .bio p {
     .post-full-custom-excerpt::after {
         right: 4px;
         bottom: -60px;
-    }
+    } */
 
     .author-list {
         padding: 0;
@@ -189,6 +191,9 @@ article .author-card .bio h4, article .author-card .bio p {
         width: 50px;
         display: block;
         flex-basis: 50px;
+        border: 2px solid var(--primary);
+        padding: 3px;
+        border-radius: 50px;
     }
 
     article .author-card picture img {
@@ -196,6 +201,7 @@ article .author-card .bio h4, article .author-card .bio p {
         height: 100%;
         object-fit: cover;
         border-radius: 50%;
+        box-shadow: 0px 0px 2px gray;
     }
 
     article .author-card .author-info {
@@ -204,7 +210,11 @@ article .author-card .bio h4, article .author-card .bio p {
         padding-bottom: 15px;
     }
 
-    article .author-card .bio h4, article .author-card .bio p {
+    article .author-card .bio h4 {
+        margin-bottom: 5px;
+    }
+
+    article .author-card .bio p {
         font-size: 14px;
         margin: 0;
     } 
