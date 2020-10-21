@@ -2,6 +2,10 @@
     font-size: 18px;
 }
 
+.winter-places-landing section {
+    padding: 25px;
+}
+
 .winter-btns {
     text-align: center;
 }
@@ -110,6 +114,10 @@
     text-align: left;
 }
 
+.winter-how .home-services_buckets .service-bucket h4.facilitate:after, .winter-how .home-services_buckets .service-bucket h4.ideate:after {
+    border-left: 20px solid #888;
+}
+
 .winter-comp ol {
     width: 80%;
     margin: 0 auto;
@@ -163,22 +171,23 @@
     height: 100%;
     position: relative;
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
 }
     
-.brick1 { 
+.mason .brick.brick1 { 
     grid-area: 1 / 1 / 2 / 2; 
-    background-image: url(../img/winter/image3.png);
+    background-image: url(../img/winter/Vacation-on-Main.png);
 }
 
-.brick2 { 
+.mason .brick.brick2 { 
     grid-area: 2 / 1 / 3 / 2; 
-    background-image: url(../img/winter/image2.png);
+    background-image: url(../img/winter/thermal-mass.jpg);
 }
 
-.brick3 { 
-    grid-area: 1 / 2 / 2 / 2; 
-    background-image: url(../img/winter/image1.png);
+.mason .brick.brick3 { 
+    grid-area: 1 / 2 / 4 / 4; 
+    background-image: url(../img/winter/frosty-art-fair.png);
 }
 
 .brick4 { 
@@ -222,6 +231,8 @@
 .guide-cta {
     padding: 25px 0;
     text-align: center;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .guide-cta h1 {
@@ -251,12 +262,46 @@
     background-color: var(--primary);
     color: #fff;
     font-family: sans-serif;
-    font-size: larger;
+    font-size: large;
 }
 
 .winter-form .response {
     color: var(--primary);
     font-weight: bold;
+}
+
+.full-guide-cta {
+    padding: 25px;
+    border: 5px solid var(--secondary);
+    display: flex;
+    flex-direction: column;
+}
+
+.full-guide-cta .winter-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.full-guide-form-wrapper {
+    padding-top: 25px;
+    margin-bottom: 10px;
+}
+
+.full-guide-cta .winter-form input[type="submit"] {
+    margin: 0;
+    background-color: var(--quaternary);
+    text-indent: 0;
+    width: 100%;
+}
+
+.mason-guide-form .winter-form input[type="submit"] {
+    width: 75%;
+    background-color: var(--quaternary);
+    text-indent: 0;
+}
+
+.mason-guide-form .mc-field-group {
+    width: 100%;
 }
 
 .winter-info {
@@ -279,6 +324,9 @@
 }
 
 @media (max-width:750px) {
+    .winter-main {
+        width: 95%;
+    }
     .mason {
         display: flex;
         flex-direction: column;
@@ -306,6 +354,32 @@
 
     .winter-hero h1 {
         font-size: 44px;
+    }
+
+    .full-guide-cta .full-guide-form-wrapper, .full-guide-cta .full-guide-form-wrapper .mc-field-group {
+        width: 80%;
+    }
+
+    .full-guide-cta .winter-form input[type="submit"] {
+        width: 50%;
+    }
+
+    .full-guide-cta {
+        flex-direction: row;
+    }
+
+    .full-guide-cta-copy {
+        margin-right: 25px;
+    }
+
+    .mason .brick.brick3 {
+        background-position-x: -200px;
+        height: 98%;
+    }
+
+    .mason-guide-form {
+        width: 40%;
+        margin: 0 auto;
     }
 }
 

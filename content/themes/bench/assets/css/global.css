@@ -136,7 +136,7 @@ input {
 
 input, textarea {
     display: block;
-    text-indent: 10px;
+    text-indent: 8px;
 }
 
 section.constrained {
