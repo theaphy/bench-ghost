@@ -3,6 +3,7 @@ routes:
   /services/: services
   /blog/: blog
   /winter-places/: winter
+  /secret-winter/: secret-winter
 
 collections:
   /:

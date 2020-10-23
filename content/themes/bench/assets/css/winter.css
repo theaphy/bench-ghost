@@ -291,7 +291,7 @@
     margin: 0;
     background-color: var(--quaternary);
     text-indent: 0;
-    width: 100%;
+    width: 75%%;
 }
 
 .mason-guide-form .winter-form input[type="submit"] {
@@ -361,11 +361,7 @@
     }
 
     .full-guide-cta .winter-form input[type="submit"] {
-        width: 50%;
-    }
-
-    .full-guide-cta {
-        flex-direction: row;
+        width: 65%;
     }
 
     .full-guide-cta-copy {
@@ -391,5 +387,10 @@
     .winter-form .winter-form-wrapper {
         width: 50%;
         margin: 0 auto;
+    }
+
+
+    .full-guide-cta {
+        flex-direction: row;
     }
 }
