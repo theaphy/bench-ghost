@@ -259,7 +259,7 @@
     cursor: pointer;
     width: 50%;
     border-radius: 50px;
-    background-color: var(--primary);
+    background-color: var(--quaternary);
     color: #fff;
     font-family: sans-serif;
     font-size: large;
