@@ -304,6 +304,20 @@
     width: 100%;
 }
 
+.winter-webinar {
+    padding: 25px;
+    border: 5px solid var(--secondary);
+}
+
+.winter-guide.winter-webinar .guide-box {
+    justify-content: space-between;
+}
+
+.winter-webinar-cta {
+    margin-top: 25px;
+    display: block;
+}
+
 .winter-info {
     text-align: center;
 }
