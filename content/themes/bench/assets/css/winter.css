@@ -86,6 +86,114 @@
     font-family: Roboto-Light;
 }
 
+.winter-barr-foundation {
+    text-align: center;
+}
+
+.winter-barr-foundation .barr-header {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.winter-barr-foundation .winter-barr-copy {
+    text-align: left;
+}
+
+.winter-barr-foundation .barr-funding-msg, .barr-logo {
+    margin: 25px 0;
+}
+
+.winter-barr-foundation .barr-disclaimer {
+    font-size: 12px;
+}
+
+.winter-barr-foundation .barr-projects {
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.winter-barr-foundation .barr-proj-card {
+    width: 325px;
+    margin: 25px;
+    transition: all 0.2s;
+}
+
+.winter-barr-foundation .barr-proj-card:hover {
+    box-shadow: 0px 1px 4px #999;
+    border-radius: 3px;
+}
+
+.winter-barr-foundation .barr-projects .barr-proj-card .barr-card-img {
+    height: 250px;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+.winter-barr-foundation .barr-projects .barr-proj-card .barr-card-img#bedford { background-image: url('../img/winter/cards/New-Bedford.jpg');}
+.winter-barr-foundation .barr-projects .barr-proj-card .barr-card-img#adams { background-image: url('../img/winter/cards/north-adams.jpg');}
+.winter-barr-foundation .barr-projects .barr-proj-card .barr-card-img#salem { background-image: url('../img/winter/cards/salem.jpeg');}
+.winter-barr-foundation .barr-projects .barr-proj-card .barr-card-img#worcester { background-image: url('../img/winter/cards/worcester.jpg');}
+.winter-barr-foundation .barr-projects .barr-proj-card .barr-card-img#cambridge { background-image: url('../img/winter/cards/Cambridge.jpg');}
+.winter-barr-foundation .barr-projects .barr-proj-card .barr-card-img#chicopee { background-image: url('../img/winter/cards/chicopee.jpg');}
+
+.winter-barr-foundation .barr-proj-card .barr-proj-titles {
+    margin-top: 10px;
+}
+
+.winter-barr-foundation .barr-proj-card .main-title {
+    position: relative;
+    color: var(--quaternary);
+    width: 75%;
+    text-transform: uppercase;
+    border-bottom: 3px solid var(--secondary);
+    text-indent: 10px;
+}
+
+.winter-barr-foundation .barr-proj-card .main-title:after {
+    content: "\2B24";
+    font-size: 10px;
+    position: absolute;
+    right: -2px;
+    bottom: -9px;
+    color: var(--secondary);
+}
+
+.winter-barr-foundation .barr-proj-card .sub-title {
+    text-indent: 10px;
+    color: #888;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+.winter-barr-foundation .barr-proj-card .barr-proj-desc {
+    margin: 25px 0;
+}
+
+.winter-barr-foundation .barr-proj-stats {
+    height: 90px;
+    border: 2px solid var(--primary);
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 1em;
+}
+
+.winter-barr-foundation .barr-proj-stats .proj-stat {
+    display: flex;
+    justify-content: space-between;
+}
+
+.winter-barr-foundation .barr-proj-stats .proj-stat p {
+    font-size: 14px;
+}
+
+.winter-barr-foundation .barr-proj-stats .proj-stat p:last-child {
+    text-align: right;
+    font-weight: bold;
+    color: var(--secondary);
+}
+
 .winter-partners .partner-imgs {
     display: flex;
     flex-wrap: wrap;
