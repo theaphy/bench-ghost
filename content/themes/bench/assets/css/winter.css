@@ -116,13 +116,36 @@
 
 .winter-barr-foundation .barr-proj-card {
     width: 325px;
+    height: 550px;
+    display: flex;
     margin: 25px;
     transition: all 0.2s;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .winter-barr-foundation .barr-proj-card:hover {
     box-shadow: 0px 1px 4px #999;
     border-radius: 3px;
+}
+
+.winter-barr-foundation .barr-projects .barr-card-wrap {
+    position: relative;
+}
+
+.winter-barr-foundation .barr-projects .barr-coming-soon {
+    color: #fff;
+    font-family: Arial;
+    font-size: 2.5em;
+    top: 120px;
+    right: 37px;
+    padding: 1px 5px;
+    text-shadow: 0px 1px 1px #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    border: 5px solid white;
+    transform: rotate(-35deg);
 }
 
 .winter-barr-foundation .barr-projects .barr-proj-card .barr-card-img {
@@ -147,11 +170,19 @@
     color: var(--quaternary);
     width: 75%;
     text-transform: uppercase;
-    border-bottom: 3px solid var(--secondary);
-    text-indent: 10px;
+    margin-bottom: -10px;
+    margin-left: 10px;
 }
 
-.winter-barr-foundation .barr-proj-card .main-title:after {
+.winter-barr-foundation .barr-proj-card .main-title-underline {
+    position: relative;
+    display: inline-block;
+    width: 85%;
+    border-bottom: 3px solid var(--secondary);
+    margin-bottom: 3px;
+}
+
+.winter-barr-foundation .barr-proj-card .main-title-underline:after {
     content: "\2B24";
     font-size: 10px;
     position: absolute;
@@ -161,7 +192,7 @@
 }
 
 .winter-barr-foundation .barr-proj-card .sub-title {
-    text-indent: 10px;
+    margin-left: 10px;
     color: #888;
     font-size: 1em;
     letter-spacing: 1px;
@@ -172,11 +203,14 @@
 }
 
 .winter-barr-foundation .barr-proj-stats {
-    height: 90px;
+    height: 110px;
     border: 2px solid var(--primary);
     border-radius: 3px;
     padding: 10px;
     font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .winter-barr-foundation .barr-proj-stats .proj-stat {
