@@ -115,10 +115,9 @@
 }
 
 .winter-barr-foundation .barr-proj-card {
-    width: 325px;
-    height: 550px;
+    width: 350px;
     display: flex;
-    margin: 25px;
+    margin: 10px;
     transition: all 0.2s;
     flex-direction: column;
     justify-content: space-between;
@@ -136,7 +135,7 @@
 .winter-barr-foundation .barr-projects .barr-coming-soon {
     color: #fff;
     font-family: Arial;
-    font-size: 2.5em;
+    font-size: 2.25em;
     top: 120px;
     right: 37px;
     padding: 1px 5px;
@@ -161,8 +160,20 @@
 .winter-barr-foundation .barr-projects .barr-proj-card .barr-card-img#cambridge { background-image: url('../img/winter/cards/Cambridge.jpg');}
 .winter-barr-foundation .barr-projects .barr-proj-card .barr-card-img#chicopee { background-image: url('../img/winter/cards/chicopee.jpg');}
 
+.winter-barr-foundation .barr-projects .barr-proj-card .barr-card-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 460px;
+    padding: 10px;
+}
+
 .winter-barr-foundation .barr-proj-card .barr-proj-titles {
     margin-top: 10px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .winter-barr-foundation .barr-proj-card .main-title {
@@ -170,16 +181,17 @@
     color: var(--quaternary);
     width: 75%;
     text-transform: uppercase;
-    margin-bottom: -10px;
-    margin-left: 10px;
+    margin-bottom: -3px;
 }
 
 .winter-barr-foundation .barr-proj-card .main-title-underline {
     position: relative;
     display: inline-block;
+    left: -10px;
     width: 85%;
     border-bottom: 3px solid var(--secondary);
     margin-bottom: 3px;
+    transition: all 0.2s;
 }
 
 .winter-barr-foundation .barr-proj-card .main-title-underline:after {
@@ -191,15 +203,19 @@
     color: var(--secondary);
 }
 
+.winter-barr-foundation .barr-proj-card .main-title-underline.stretchy {
+    width: 100%;
+}
+
 .winter-barr-foundation .barr-proj-card .sub-title {
-    margin-left: 10px;
     color: #888;
     font-size: 1em;
     letter-spacing: 1px;
 }
 
 .winter-barr-foundation .barr-proj-card .barr-proj-desc {
-    margin: 25px 0;
+    font-size: 16px;
+    color: var(--secondary);
 }
 
 .winter-barr-foundation .barr-proj-stats {
@@ -483,6 +499,29 @@
     .winter-main {
         width: 95%;
     }
+    
+    .winter-barr-foundation .barr-proj-card {
+        box-shadow: 0px 1px 4px #999;
+        border-radius: 3px;
+        width: 300px;
+    } 
+
+    .winter-barr-foundation .barr-projects .barr-coming-soon {
+        font-size: 1.75em;;
+    }
+
+    .winter-barr-foundation .barr-projects .barr-proj-card .barr-card-copy {
+        height: 560px;
+    }    
+
+    .winter-barr-foundation .barr-proj-card .barr-proj-titles {
+        height: 165px;
+    }
+
+    .winter-barr-foundation .barr-proj-stats {
+        height: 140px;
+    }
+
     .mason {
         display: flex;
         flex-direction: column;
@@ -506,7 +545,7 @@
 @media (min-width: 751px){
     .winter-hero {
         height: 350px;
-    }
+    }   
 
     .winter-hero h1 {
         font-size: 44px;
