@@ -5,9 +5,33 @@
     --quaternary: #F33546; 
 }
 
+
+/* post card list */
 .post-feed {
     max-width: 60%;
     margin: 0 auto;
+}
+
+.post-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+article {
+    flex-basis: 240px;
+    margin-bottom: 50px;
+    padding: 10px 30px;
+    border-bottom: 1px solid var(--primary);
+    transition: all 0.2s;
+}
+
+article:hover {
+    border-bottom: 5px solid var(--primary);
+}
+
+.article-back::before {
+    content: "\21E0";
+    margin-right: 3px;
 }
 
 .post-feed section.post-card-excerpt {
@@ -19,24 +43,11 @@
 .post-card-image-link {
     padding-bottom: 10px;
     display: block;
+    height: 200px;
+    width: 100%;
 }
 
 /* actual post styling */
-article {
-    margin-bottom: 50px;
-    padding: 10px 30px;
-    border-bottom: 1px solid var(--primary);
-}
-
-article:last-child {
-    border: none;
-}
-
-.article-back::before {
-    content: "\21E0";
-    margin-right: 3px;
-}
-
 .post-full {
     max-width: 60%;
     margin: 0 auto;

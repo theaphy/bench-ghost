@@ -10,11 +10,13 @@
 {{> "site-nav"}}
 <div class="post-feed">
     <h1 class="blog-title">Bench Places Blog</h1>
-    {{#get "posts"}}
-        {{#foreach posts}}
-            {{> post-card}}
-        {{/foreach}}
-    {{/get}}
+    <div class="post-container">
+        {{#get "posts"}}
+            {{#foreach posts}}
+                {{> post-card}}
+            {{/foreach}}
+        {{/get}}
+    </div>
 </div>
 {{> "contact-form"}}
 {{> "footer"}}
