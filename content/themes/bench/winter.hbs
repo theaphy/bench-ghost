@@ -35,33 +35,27 @@
                     provide a safe social space for you and your neighbors.</p>
             </section>
             <div id="winter-form-scroll" class="guide-cta">
-                <h1 style="color: #F33546;">Sign up to download the guide today</h1>
+                <h1 style="color: #F33546;">Sign up to download the Winter Places 2.0 guide</h1>
                 {{!-- <a href=""><button class="round">Get the Design Guide</button></a> --}}
                 <!-- Begin Mailchimp Signup Form -->
-                {{!-- <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css"> --}}
+                {{!--
+                <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+                --}}
                 <style type="text/css">
                     /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
 	                    We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
                 </style>
                 <div class="winter-form">
                     <form
-                        action="https://benchconsulting.us19.list-manage.com/subscribe/post?u=9987e252175671e64424db8c2&amp;id=7bdd8c57ff"
+                        action="https://benchconsulting.us19.list-manage.com/subscribe/post?u=9987e252175671e64424db8c2&amp;id=9f001fe4ea"
                         method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
                         target="_blank" novalidate>
                         <div class="winter-form-wrapper">
                             <div class="mc-field-group">
-                                <label for="mce-EMAIL">Email </label>
+                                <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
+                                </label>
                                 <input class="winter-form-input" type="email" value="" name="EMAIL"
                                     class="required email" id="mce-EMAIL">
-                            </div>
-                            <div style="display: none;" class="mc-field-group input-group">
-                                <strong>Winter Places Sign Up </strong>
-                                <ul>
-                                    <li><input type="checkbox" value="1" name="group[5750][1]"
-                                            id="mce-group[5750]-5750-0" checked><label
-                                            for="mce-group[5750]-5750-0">Winter
-                                            Places Guide</label></li>
-                                </ul>
                             </div>
                             <div id="mce-responses" class="clear">
                                 <div class="response" id="mce-error-response" style="display:none"></div>
@@ -69,8 +63,8 @@
                             </div>
                             <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                             <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
-                                    name="b_9987e252175671e64424db8c2_7bdd8c57ff" tabindex="-1" value=""></div>
-                            <div class="clear"><input type="submit" value="Sign up" name="subscribe"
+                                    name="b_9987e252175671e64424db8c2_9f001fe4ea" tabindex="-1" value=""></div>
+                            <div class="clear"><input type="submit" value="Subscribe" name="subscribe"
                                     id="mc-embedded-subscribe" class="button"></div>
                         </div>
                     </form>
@@ -118,7 +112,7 @@
                     </div>
                 </div>
                 <div class="barr-projects">
-                    <a target="_blank" class="barr-card-wrap" href="{{asset "pdf/New-Bedford-WP-Project-Card-compressed.pdf"}}">
+                    <a target="_blank" class="barr-card-wrap" href="{{asset "pdf/WP2.0/New-Bedford-WP-min.pdf"}}">
                         <div class="barr-proj-card">
                             {{!-- <span class="barr-coming-soon">coming soon</span> --}}
                             <div class="barr-card-img" id="bedford"></div>
@@ -128,7 +122,9 @@
                                     <span class="main-title-underline"></span>
                                     <h3 class="sub-title">New Bedford, MA</h3>
                                 </div>
-                                <p class="barr-proj-desc">A place this winter where the kids can slide down a hill in the snow, families can gather by a warm fire pit, and everyone can enjoy art works, lights shows and holiday music.</p>
+                                <p class="barr-proj-desc">A place this winter where the kids can slide down a hill in
+                                    the snow, families can gather by a warm fire pit, and everyone can enjoy art works,
+                                    lights shows and holiday music.</p>
                                 <div class="barr-proj-stats">
                                     <div class="proj-stat">
                                         <p>Project Type:</p>
@@ -146,7 +142,7 @@
                             </div>
                         </div>
                     </a>
-                    <a target="_blank" class="barr-card-wrap" href="{{asset "pdf/North-Adams-WP-Project-Card-compressed.pdf"}}">
+                    <a target="_blank" class="barr-card-wrap" href="{{asset "pdf/WP2.0/North-Adams-WP-min.pdf"}}">
                         <div class="barr-proj-card">
                             {{!-- <span class="barr-coming-soon">coming soon</span> --}}
                             <div class="barr-card-img" id="adams"></div>
@@ -157,7 +153,8 @@
                                     <h3 class="sub-title">North Adams, MA</h3>
                                 </div>
                                 <p class="barr-proj-desc">A seasonal installation in the heart of downtown North Adams.
-                                    These assets will help to circulate people throughout the city during the winter months
+                                    These assets will help to circulate people throughout the city during the winter
+                                    months
                                     to provide continuity of commerce, economic
                                     resilience, and to embrace the need for innovation during the COVID-19 pandemic.
                                 </p>
@@ -178,7 +175,7 @@
                             </div>
                         </div>
                     </a>
-                    <a target="_blank" class="barr-card-wrap" href="{{asset "pdf/Salem-WP-Project Card-compressed.pdf"}}">
+                    <a target="_blank" class="barr-card-wrap" href="{{asset "pdf/WP2.0/Salem-WP-min.pdf"}}">
                         <div class="barr-proj-card">
                             {{!-- <span class="barr-coming-soon">coming soon</span> --}}
                             <div class="barr-card-img" id="salem"></div>
@@ -208,7 +205,7 @@
                             </div>
                         </div>
                     </a>
-                    <a target="_blank" class="barr-card-wrap" href="#">
+                    <a target="_blank" class="barr-card-wrap" href="{{asset "pdf/WP2.0/Worcester-WP-min.pdf"}}">
                         <div class="barr-proj-card">
                             {{!-- <span class="barr-coming-soon">coming soon</span> --}}
                             <div class="barr-card-img" id="worcester"></div>
@@ -218,8 +215,10 @@
                                     <span class="main-title-underline"></span>
                                     <h3 class="sub-title">Worcester, MA</h3>
                                 </div>
-                                <p class="barr-proj-desc">Traditionally a one-evening event with live performances and ice
-                                    skating, this year’s Festival of Lights aims to unite neighboring districts, support and
+                                <p class="barr-proj-desc">Traditionally a one-evening event with live performances and
+                                    ice
+                                    skating, this year’s Festival of Lights aims to unite neighboring districts, support
+                                    and
                                     encourage patronage of local businesses, encourage walkability, and beautify the
                                     streetscape, while maintaining public safety as the top priority.</p>
                                 <div class="barr-proj-stats">
@@ -233,14 +232,15 @@
                                     </div>
                                     <div class="proj-stat">
                                         <p>Project Team: </p>
-                                        <p>Creative Hub Worcester, MainIDEA, Main South Community Development Corporation,
+                                        <p>Creative Hub Worcester, MainIDEA, Main South Community Development
+                                            Corporation,
                                             Technocopia, and Tower Hill Botanic Garden</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </a>
-                    <a target="_blank" class="barr-card-wrap" href="{{asset "pdf/Cambridge-WP-Project-Card-compressed.pdf"}}">
+                    <a target="_blank" class="barr-card-wrap" href="{{asset "pdf/WP2.0/Cambridge-WP-min.pdf"}}">
                         <div class="barr-proj-card">
                             {{!-- <span class="barr-coming-soon">coming soon</span> --}}
                             <div class="barr-card-img" id="cambridge"></div>
@@ -270,7 +270,7 @@
                             </div>
                         </div>
                     </a>
-                    <a target="_blank" class="barr-card-wrap" href="#">
+                    <a target="_blank" class="barr-card-wrap" href="{{asset "pdf/WP2.0/Chicopee-WP-min.pdf"}}">
                         <div class="barr-proj-card">
                             {{!-- <span class="barr-coming-soon">coming soon</span> --}}
                             <div class="barr-card-img" id="chicopee"></div>
@@ -280,7 +280,10 @@
                                     <span class="main-title-underline"></span>
                                     <h3 class="sub-title">Chicopee, MA</h3>
                                 </div>
-                                <p class="barr-proj-desc">The Winter Market will host a festive winter market featuring local artisans, makers, businesses and produce in a downtown plaza space. Visitors will receive “passports” to area businesses to receive discounts or free goods and encourage all to explore and support the City’s small business community.</p>
+                                <p class="barr-proj-desc">The Winter Market will host a festive winter market featuring
+                                    local artisans, makers, businesses and produce in a downtown plaza space. Visitors
+                                    will receive “passports” to area businesses to receive discounts or free goods and
+                                    encourage all to explore and support the City’s small business community.</p>
                                 <div class="barr-proj-stats">
                                     <div class="proj-stat">
                                         <p>Project Type:</p>
@@ -298,7 +301,7 @@
                             </div>
                         </div>
                     </a>
-                    <a target="_blank" class="barr-card-wrap" href="#">
+                    <a target="_blank" class="barr-card-wrap" href="{{asset "pdf/WP2.0/Springfield-WP-min.pdf"}}">
                         <div class="barr-proj-card">
                             {{!-- <span class="barr-coming-soon">coming soon</span> --}}
                             <div class="barr-card-img" id="springfield"></div>
@@ -308,7 +311,10 @@
                                     <span class="main-title-underline"></span>
                                     <h3 class="sub-title">Springfield, MA</h3>
                                 </div>
-                                <p class="barr-proj-desc">This project aims to bring new visitors down to Springfield’s Dining District using new large scale light installations, seating and warming stations including three wood burning fire pits to get Springfield Residents outdoors and encourage them to visit the area’s small restaurants.</p>
+                                <p class="barr-proj-desc">This project aims to bring new visitors down to Springfield’s
+                                    Dining District using new large scale light installations, seating and warming
+                                    stations including three wood burning fire pits to get Springfield Residents
+                                    outdoors and encourage them to visit the area’s small restaurants.</p>
                                 <div class="barr-proj-stats">
                                     <div class="proj-stat">
                                         <p>Project Type:</p>
@@ -326,7 +332,7 @@
                             </div>
                         </div>
                     </a>
-                    <a target="_blank" class="barr-card-wrap" href="{{asset "pdf/Fall-River-WP-Project-Card-compressed.pdf"}}">
+                    <a target="_blank" class="barr-card-wrap" href="{{asset "pdf/WP2.0/FallRiver-WP-min.pdf"}}">
                         <div class="barr-proj-card">
                             {{!-- <span class="barr-coming-soon">coming soon</span> --}}
                             <div class="barr-card-img" id="fallriver"></div>
@@ -336,7 +342,10 @@
                                     <span class="main-title-underline"></span>
                                     <h3 class="sub-title">Fall River, MA</h3>
                                 </div>
-                                <p class="barr-proj-desc">Activating a small downtown plaza with warming stations, seating, lighting, public art and outdoor performances in order to encourage people to visit the Downtown and area small businesses during the upcoming winter months and into the Spring.</p>
+                                <p class="barr-proj-desc">Activating a small downtown plaza with warming stations,
+                                    seating, lighting, public art and outdoor performances in order to encourage people
+                                    to visit the Downtown and area small businesses during the upcoming winter months
+                                    and into the Spring.</p>
                                 <div class="barr-proj-stats">
                                     <div class="proj-stat">
                                         <p>Project Type:</p>
@@ -361,21 +370,78 @@
                             <div class="barr-card-copy">
                                 <div class="barr-proj-titles">
                                     <h2 class="main-title">Taunton Winter Places</h2>
+                                    <span class="main-title-underline"></span>
                                     <h3 class="sub-title">Taunton, MA</h3>
                                 </div>
-                                <p class="barr-proj-desc">TBA</p>
+                                <p class="barr-proj-desc">We wanted to enhance a newly completed parklet in the Downtown neighborhood so that it would be inviting to visitors in the cold months as well as the warmer months.</p>
                                 <div class="barr-proj-stats">
                                     <div class="proj-stat">
                                         <p>Project Type:</p>
-                                        <p>TBA</p>
+                                        <p> Family friendly, Warming</p>
                                     </div>
                                     <div class="proj-stat">
                                         <p>Budget: </p>
-                                        <p>$$$</p>
+                                        <p>$$</p>
                                     </div>
                                     <div class="proj-stat">
                                         <p>Project Team: </p>
-                                        <p>City of Taunton, Downtown Taunton BID</p>
+                                        <p>Downtown Taunton Foundation</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a target="_blank" class="barr-card-wrap" href="{{asset "pdf/WP2.0/Amherst-WP-min.pdf"}}">
+                        <div class="barr-proj-card">
+                            {{!-- <span class="barr-coming-soon">coming soon</span> --}}
+                            <div class="barr-card-img" id="amherst"></div>
+                            <div class="barr-card-copy">
+                                <div class="barr-proj-titles">
+                                    <h2 class="main-title">Amherst Winter Places</h2>
+                                    <span class="main-title-underline"></span>
+                                    <h3 class="sub-title">Amherst, MA</h3>
+                                </div>
+                                <p class="barr-proj-desc">A downtown winter wonderland brings joy and community in the dark winter months.</p>
+                                <div class="barr-proj-stats">
+                                    <div class="proj-stat">
+                                        <p>Project Type:</p>
+                                        <p> Family friendly, Lighting, Warming</p>
+                                    </div>
+                                    <div class="proj-stat">
+                                        <p>Budget: </p>
+                                        <p>$$</p>
+                                    </div>
+                                    <div class="proj-stat">
+                                        <p>Project Team: </p>
+                                        <p>Amherst BID, Amherst Chamber of Commerce, Town of Amherst</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a target="_blank" class="barr-card-wrap" href="{{asset "pdf/WP2.0/Nubian-Nights-WP-min.pdf"}}">
+                        <div class="barr-proj-card">
+                            {{!-- <span class="barr-coming-soon">coming soon</span> --}}
+                            <div class="barr-card-img" id="nubian"></div>
+                            <div class="barr-card-copy">
+                                <div class="barr-proj-titles">
+                                    <h2 class="main-title">Nubian Nights</h2>
+                                    <span class="main-title-underline"></span>
+                                    <h3 class="sub-title">Boston, MA</h3>
+                                </div>
+                                <p class="barr-proj-desc">We set out to create a collaborative outdoor experience that integrated both small business and the arts. Creating a fun, outdoor experience that would be enjoyed by those on foot, bike, bus or car.</p>
+                                <div class="barr-proj-stats">
+                                    <div class="proj-stat">
+                                        <p>Project Type:</p>
+                                        <p> Family friendly, Lighting</p>
+                                    </div>
+                                    <div class="proj-stat">
+                                        <p>Budget: </p>
+                                        <p>$$</p>
+                                    </div>
+                                    <div class="proj-stat">
+                                        <p>Project Team: </p>
+                                        <p>Roxbury Cultural District, Jazz Urbane, MF Dynamics, Black Market, Nubian Gallery</p>
                                     </div>
                                 </div>
                             </div>
@@ -387,18 +453,18 @@
                 <h2>program partners</h2>
                 <div class="partner-imgs">
                     <a target="_blank" href="https://patronicity.com">
-                        <img src="{{asset "img/Patronicity-Logo_white-bg.png"}}" alt="Patronicity logo">
+                        <img src="{{asset " img/Patronicity-Logo_white-bg.png"}}" alt="Patronicity logo">
                     </a>
                     <a target="_blank" href="https://www.architects.org/">
-                        <img style="max-height: 100px;" src="{{asset "img/winter/boston-society-for-architecture.png"}}"
-                            alt="Boston society for architects logo">
+                        <img style="max-height: 100px;" src="{{asset "
+                            img/winter/boston-society-for-architecture.png"}}" alt="Boston society for architects logo">
                     </a>
                     <a target="_blank" href="https://www.municipaction.ca/">
-                        <img style="margin-top: -10px;" src="{{asset "img/winter/municipaction-logo.png"}}"
+                        <img style="margin-top: -10px;" src="{{asset " img/winter/municipaction-logo.png"}}"
                             alt="Municipaction logo">
                     </a>
                     <a target="_blank" href="https://bslanow.org/">
-                        <img src="{{asset "img/winter/BSLA-logo.jpg"}}" alt="Boston Society of Land Architects logo">
+                        <img src="{{asset " img/winter/BSLA-logo.jpg"}}" alt="Boston Society of Land Architects logo">
                     </a>
                 </div>
             </section>
@@ -468,30 +534,25 @@
                         <div class="full-guide-form">
                             {{!-- <a href=""><button class="round">Get the Design Guide</button></a> --}}
                             <!-- Begin Mailchimp Signup Form -->
-                            {{!-- <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css"> --}}
+                            {{!--
+                            <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet"
+                                type="text/css"> --}}
                             <style type="text/css">
                                 /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
     	                    We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
                             </style>
                             <div class="winter-form">
                                 <form
-                                    action="https://benchconsulting.us19.list-manage.com/subscribe/post?u=9987e252175671e64424db8c2&amp;id=7bdd8c57ff"
+                                    action="https://benchconsulting.us19.list-manage.com/subscribe/post?u=9987e252175671e64424db8c2&amp;id=9f001fe4ea"
                                     method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
                                     class="validate" target="_blank" novalidate>
-                                    <div class="full-guide-form-wrapper">
+                                    <div class="winter-form-wrapper">
                                         <div class="mc-field-group">
-                                            <label for="mce-EMAIL">Enter your email to receive the full guide</label>
+                                            <label for="mce-EMAIL">Enter your email to receive the full guide <span
+                                                    class="asterisk">*</span>
+                                            </label>
                                             <input class="winter-form-input" type="email" value="" name="EMAIL"
                                                 class="required email" id="mce-EMAIL">
-                                        </div>
-                                        <div style="display: none;" class="mc-field-group input-group">
-                                            <strong>Winter Places Sign Up </strong>
-                                            <ul>
-                                                <li><input type="checkbox" value="1" name="group[5750][1]"
-                                                        id="mce-group[5750]-5750-0" checked><label
-                                                        for="mce-group[5750]-5750-0">Winter
-                                                        Places Guide</label></li>
-                                            </ul>
                                         </div>
                                         <div id="mce-responses" class="clear">
                                             <div class="response" id="mce-error-response" style="display:none"></div>
@@ -499,21 +560,16 @@
                                         </div>
                                         <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                                         <div style="position: absolute; left: -5000px;" aria-hidden="true"><input
-                                                type="text" name="b_9987e252175671e64424db8c2_7bdd8c57ff" tabindex="-1"
+                                                type="text" name="b_9987e252175671e64424db8c2_9f001fe4ea" tabindex="-1"
                                                 value=""></div>
-                                        <div class="clear"><input type="submit" value="Get the Design Guide"
-                                                name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                                        <div class="clear"><input type="submit" value="Subscribe" name="subscribe"
+                                                id="mc-embedded-subscribe" class="button"></div>
                                     </div>
                                 </form>
                             </div>
-                            <script type='text/javascript'
-                                src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-                            <script
-                                type='text/javascript'>(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'MMERGE1'; ftypes[1] = 'text'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
-                            <!--End mc_embed_signup-->
                         </div>
                     </div>
-                    <img style="max-width: 500px;" src="{{asset "img/winter/WinterPlacesScreenShot.png"}}" alt="">
+                    <img style="max-width: 500px;" src="{{asset " img/winter/WinterPlacesScreenShot.png"}}" alt="">
                 </div>
             </section>
             <section class="winter-looks">
@@ -550,30 +606,26 @@
                         <div class="full-guide-form">
                             {{!-- <a href=""><button class="round">Get the Design Guide</button></a> --}}
                             <!-- Begin Mailchimp Signup Form -->
-                            {{!-- <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css"> --}}
+                            {{!--
+                            <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet"
+                                type="text/css"> --}}
                             <style type="text/css">
                                 /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
         	                    We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
                             </style>
                             <div class="winter-form">
+                                <h1 style="color: #F33546; text-align: center;">Sign up to download the Winter Places 2.0 guide
+                                    </h1>
                                 <form
-                                    action="https://benchconsulting.us19.list-manage.com/subscribe/post?u=9987e252175671e64424db8c2&amp;id=7bdd8c57ff"
+                                    action="https://benchconsulting.us19.list-manage.com/subscribe/post?u=9987e252175671e64424db8c2&amp;id=9f001fe4ea"
                                     method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
                                     class="validate" target="_blank" novalidate>
-                                    <div class="full-guide-form-wrapper">
+                                    <div class="winter-form-wrapper">
                                         <div class="mc-field-group">
-                                            <label for="mce-EMAIL">Email</label>
+                                            <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
+                                            </label>
                                             <input class="winter-form-input" type="email" value="" name="EMAIL"
                                                 class="required email" id="mce-EMAIL">
-                                        </div>
-                                        <div style="display: none;" class="mc-field-group input-group">
-                                            <strong>Winter Places Sign Up </strong>
-                                            <ul>
-                                                <li><input type="checkbox" value="1" name="group[5750][1]"
-                                                        id="mce-group[5750]-5750-0" checked><label
-                                                        for="mce-group[5750]-5750-0">Winter
-                                                        Places Guide</label></li>
-                                            </ul>
                                         </div>
                                         <div id="mce-responses" class="clear">
                                             <div class="response" id="mce-error-response" style="display:none"></div>
@@ -581,17 +633,13 @@
                                         </div>
                                         <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                                         <div style="position: absolute; left: -5000px;" aria-hidden="true"><input
-                                                type="text" name="b_9987e252175671e64424db8c2_7bdd8c57ff" tabindex="-1"
+                                                type="text" name="b_9987e252175671e64424db8c2_9f001fe4ea" tabindex="-1"
                                                 value=""></div>
-                                        <div class="clear"><input type="submit" value="Get the Design Guide"
-                                                name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                                        <div class="clear"><input type="submit" value="Subscribe" name="subscribe"
+                                                id="mc-embedded-subscribe" class="button"></div>
                                     </div>
                                 </form>
                             </div>
-                            <script type='text/javascript'
-                                src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-                            <script
-                                type='text/javascript'>(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'MMERGE1'; ftypes[1] = 'text'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
                             <!--End mc_embed_signup-->
                         </div>
                     </div>
@@ -617,8 +665,8 @@
                                 class="round">Click here to listen</button></a>
                     </div>
                     <div class="right">
-                        <a target="_blank" href="https://vimeo.com/473598001"><img
-                                src="{{asset "img/winter/winter-webinar.png"}}" alt=""></a>
+                        <a target="_blank" href="https://vimeo.com/473598001"><img src="{{asset "
+                                img/winter/winter-webinar.png"}}" alt=""></a>
                     </div>
                 </div>
             </section>
