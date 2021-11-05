@@ -14,9 +14,9 @@
         <div class="winter-hero">
             <div class="winter-hero-copy">
                 <div class="winter-turq-circ">
-                    <h1><span>Winter</span> Places</h1>
+                    <h1><span>Winter</span> Places 2.0</h1>
                 </div>
-                <h4>A design competition for winter placemaking</h4>
+                <h4>A WINTER PLACEMAKING GUIDE &amp; REPORT</h4>
             </div>
         </div>
         <div class="winter-main">
@@ -36,6 +36,7 @@
             </section>
             <div id="winter-form-scroll" class="guide-cta">
                 <h1 style="color: #F33546;">Sign up to download the Winter Places 2.0 guide</h1>
+                <p>You will receive an email with a link to download the new Winter Places 2.0 guide.</p>
                 {{!-- <a href=""><button class="round">Get the Design Guide</button></a> --}}
                 <!-- Begin Mailchimp Signup Form -->
                 {{!--
@@ -69,6 +70,8 @@
                         </div>
                     </form>
                 </div>
+                <p style="margin-top: 25px; font-weight: bold; color: #56C3Af; font-size: 1.3em;">To download the original Winter Places Guide (2020)</p>
+                <a href="#" target="_blank"><button class="button" style="border-radius: 50px;">CLICK HERE</button></a>
                 <script type='text/javascript'
                     src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
                 <script
@@ -363,7 +366,7 @@
                             </div>
                         </div>
                     </a>
-                    <a target="_blank" class="barr-card-wrap" href="#">
+                    <a target="_blank" class="barr-card-wrap" href="{{asset "pdf/WP2.0/Taunton-WP-min.pdf"}}">
                         <div class="barr-proj-card">
                             {{!-- <span class="barr-coming-soon">coming soon</span> --}}
                             <div class="barr-card-img" id="taunton"></div>
@@ -453,22 +456,21 @@
                 <h2>program partners</h2>
                 <div class="partner-imgs">
                     <a target="_blank" href="https://patronicity.com">
-                        <img src="{{asset " img/Patronicity-Logo_white-bg.png"}}" alt="Patronicity logo">
+                        <img src="{{asset "img/Patronicity-Logo_white-bg.png"}}" alt="Patronicity logo">
                     </a>
                     <a target="_blank" href="https://www.architects.org/">
-                        <img style="max-height: 100px;" src="{{asset "
-                            img/winter/boston-society-for-architecture.png"}}" alt="Boston society for architects logo">
+                        <img style="max-height: 100px;" src="{{asset "img/winter/boston-society-for-architecture.png"}}" alt="Boston society for architects logo">
                     </a>
                     <a target="_blank" href="https://www.municipaction.ca/">
-                        <img style="margin-top: -10px;" src="{{asset " img/winter/municipaction-logo.png"}}"
+                        <img style="margin-top: -10px;" src="{{asset "img/winter/municipaction-logo.png"}}"
                             alt="Municipaction logo">
                     </a>
                     <a target="_blank" href="https://bslanow.org/">
-                        <img src="{{asset " img/winter/BSLA-logo.jpg"}}" alt="Boston Society of Land Architects logo">
+                        <img src="{{asset "img/winter/BSLA-logo.jpg"}}" alt="Boston Society of Land Architects logo">
                     </a>
                 </div>
             </section>
-            <section class="winter-comp">
+            {{!-- <section class="winter-comp">
                 <h2>the competition</h2>
                 <p>How can we encourage residents and visitors to visit and spend time on our main streets during colder
                     winter weather while also encouraging shopping and dining at area small businesses? <b>Winter
@@ -481,8 +483,8 @@
                     <li>Give them a reason to stay, including, but not limited to, space for outdoor dining, recreation,
                         entertainment, commerce, public art and warmth.</li>
                 </ol>
-            </section>
-            <section class="winter-how">
+            </section> --}}
+            {{!-- <section class="winter-how">
                 <h2>how it works</h2>
                 <p>We asked design firms and creates to develop quickly implementable, low cost interventions to drive
                     visitors back to Main Street that will encourage them to stay longer and patronize area restaurants
@@ -514,7 +516,7 @@
                         <p>Finalists are published in a FREE digital Design Guide.</p>
                     </div>
                 </div>
-                {{!-- <div class="winter-btns">
+                <div class="winter-btns">
                     <a target="_blank"
                         href="https://patronicity.s3.amazonaws.com/static/bench/Winter+Places+-+Competition+Call+Overview.pdf"><button
                             class="round">Program Guide</button></a>
@@ -522,7 +524,7 @@
                         href="https://docs.google.com/forms/d/e/1FAIpQLSfxbtz8zme_3NFNjMdPto-TnKJ-kYWPJVxg1BQcokBhqGLkbw/viewform"><button
                             class="quaternary round">Submit
                             Ideas</button></a>
-                </div> --}}
+                </div>
                 <div class="full-guide-cta">
                     <div class="full-guide-cta-copy">
                         <h2>the design guide</h2>
@@ -532,14 +534,10 @@
                             design features images, description, contact information and rough budgets.
                         </p>
                         <div class="full-guide-form">
-                            {{!-- <a href=""><button class="round">Get the Design Guide</button></a> --}}
-                            <!-- Begin Mailchimp Signup Form -->
-                            {{!--
-                            <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet"
-                                type="text/css"> --}}
+                            
                             <style type="text/css">
-                                /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-    	                    We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+                                
+    	                    
                             </style>
                             <div class="winter-form">
                                 <form
@@ -553,6 +551,7 @@
                                             </label>
                                             <input class="winter-form-input" type="email" value="" name="EMAIL"
                                                 class="required email" id="mce-EMAIL">
+                                            <p>You will receive an email with a link to download the new Winter Places 2.0 guide.</p>
                                         </div>
                                         <div id="mce-responses" class="clear">
                                             <div class="response" id="mce-error-response" style="display:none"></div>
@@ -571,8 +570,8 @@
                     </div>
                     <img style="max-width: 500px;" src="{{asset " img/winter/WinterPlacesScreenShot.png"}}" alt="">
                 </div>
-            </section>
-            <section class="winter-looks">
+            </section> --}}
+            {{!-- <section class="winter-looks">
                 <h2>creative solutions</h2>
                 <p>We asked creatives to think outside the box. From cozy and practical to abstract and inspiring, the
                     final Design Guide is full of actionable, impactful and cost-effective solutions to keep downtowns
@@ -596,26 +595,17 @@
                                 <p>Frosty Art Fair</p>
                             </div>
                         </div>
-                        {{!-- <div class="brick brick4">
-                            <div style="bottom:0;" class="brick-overlay">
-                                <p>Big Bright Light Show, Rochester, MI</p>
-                            </div>
-                        </div> --}}
                     </div>
                     <div class="mason-guide-form">
                         <div class="full-guide-form">
-                            {{!-- <a href=""><button class="round">Get the Design Guide</button></a> --}}
-                            <!-- Begin Mailchimp Signup Form -->
-                            {{!--
-                            <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet"
-                                type="text/css"> --}}
+                            
                             <style type="text/css">
-                                /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-        	                    We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+                                
                             </style>
                             <div class="winter-form">
                                 <h1 style="color: #F33546; text-align: center;">Sign up to download the Winter Places 2.0 guide
                                     </h1>
+                                <p>You will receive an email with a link to download the new Winter Places 2.0 guide.</p>
                                 <form
                                     action="https://benchconsulting.us19.list-manage.com/subscribe/post?u=9987e252175671e64424db8c2&amp;id=9f001fe4ea"
                                     method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
@@ -644,16 +634,7 @@
                         </div>
                     </div>
                 </div>
-                {{!-- <div class="winter-btns">
-                    <a target="_blank"
-                        href="https://patronicity.s3.amazonaws.com/static/bench/Winter+Places+-+Competition+Call+Overview.pdf"><button
-                            class="round">Program Guide</button></a>
-                    <a
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSfxbtz8zme_3NFNjMdPto-TnKJ-kYWPJVxg1BQcokBhqGLkbw/viewform"><button
-                            class="quaternary round">Submit
-                            Ideas</button></a>
-                </div> --}}
-            </section>
+            </section> --}}
             <section class="winter-guide winter-webinar">
                 <div class="guide-box">
                     <div class="left">

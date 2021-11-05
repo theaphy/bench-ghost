@@ -24,7 +24,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('../img/winter/bench-winter-streets.png');
+    background-image: url('../img/winter/2021-Winter-Places-2.0.png');
     color: #fff;
     padding: 25px 0;
     background-repeat: no-repeat;
@@ -38,8 +38,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 150px;
-    height: 150px;
+    width: 220px;
+    height: 220px;
     padding: 25px;
     border-radius: 100%;
     margin: 0 auto;
@@ -57,7 +57,7 @@
 
 .winter-hero h4 {
     text-align: center;
-    font-size: 24px;
+    font-size: 32px;
     margin-top: 25px;
     font-weight: bold;
     font-family: roboto-bold;
@@ -549,11 +549,11 @@
 
 @media (min-width: 751px){
     .winter-hero {
-        height: 350px;
+        height: 550px;
     }   
 
     .winter-hero h1 {
-        font-size: 44px;
+        font-size: 50px;
     }
 
     .full-guide-cta .full-guide-form-wrapper, .full-guide-cta .full-guide-form-wrapper .mc-field-group {
